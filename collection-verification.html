@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>induslnd-bank</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <style>
+        .content_box {
+            padding-top: 30px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar navbar-expand-lg">
+            <a href="javascript:void(0);" class="navbar-brand">
+                <img src="assets/img/logo.svg">
+            </a>
+            <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"><i class="fa-solid fa-bars"></i></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav ml-auto">
+                    <li clas="navbar-item">
+                        <a href="javascript:void(0);" class="nav-link">Home</a>
+                    </li>
+                    <li clas="navbar-item">
+                        <a href="javascript:void(0);" class="nav-link">Terms & Conditions</a>
+                    </li>
+                    <li clas="navbar-item">
+                        <a href="javascript:void(0);" class="nav-link">Privacy Policy</a>
+                    </li>
+                    <li clas="navbar-item">
+                        <a href="javascript:void(0);" class="nav-link">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <section class="multistep_sec">
+        <div class="container-fluid">
+            <div class="row">
+
+                <div class="col-md-12">
+                    <div class="back">
+                        <p><a href="collection-question.html"><img src="assets/img/left_arrow.svg"> Back</a></p>
+                    </div>
+                </div>
+
+                <div class="col-md-12">
+                    <div class="menu_link_section">
+                        <div class="link">
+                            <ul>
+                                <li class="active">
+                                    <a href="javascript:void(0);">
+                                        <img src="assets/img/customer_information.svg">
+                                        Customer <br> Information
+                                    </a>
+                                </li>
+                                <li class="">
+                                    <a href="javascript:void(0);">
+                                        <img src="assets/img/basic.svg">
+                                        Basic Q & A
+                                    </a>
+                                </li>
+                                <li class="">
+                                    <a href="javascript:void(0);">
+                                        <img src="assets/img/collection.svg">
+                                        Collection Q & A
+                                    </a>
+                                </li>
+                                <li class="">
+                                    <a href="javascript:void(0);">
+                                        <img src="assets/img/payment.svg">
+                                        Payments Q & A
+                                    </a>
+                                </li>
+                                <li class="">
+                                    <a href="javascript:void(0);">
+                                        <img src="assets/img/summary.svg">
+                                        Summary Page
+                                    </a>
+                                </li>
+
+                            </ul>
+
+                            <div class="progress-container">
+                                <div class="progress" id="progress" style="width: 50%;"></div>
+                                <div class="circle active">
+                                    <div class="count_pro">
+                                        <p>1</p>
+                                        <img src="assets/img/ckeck.svg">
+                                    </div>
+                                </div>
+                                <div class="circle active">
+                                    <div class="count_pro">
+                                        <p>2</p>
+                                        <img src="assets/img/ckeck.svg">
+                                    </div>
+                                </div>
+                                <div class="circle ">
+                                    <div class="count_pro">
+                                        <p>3</p>
+                                        <img src="assets/img/ckeck.svg">
+                                    </div>
+                                </div>
+                                <div class="circle"> <div class="count_pro">
+                                    <p>4</p>
+                                    <img src="assets/img/ckeck.svg">
+                                </div></div>
+                                <div class="circle"> <div class="count_pro">
+                                    <p>5</p>
+                                    <img src="assets/img/ckeck.svg">
+                                </div></div>
+                            </div>
+
+                            
+                        </div>
+
+                        <div class="content_box">
+                            <div class="form-card">
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <div class="cus_img">
+                                            <img src="assets/img/metting.svg">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-8">
+                                        <form action="">
+                                            <div class="cus_form basic_question_box">
+                                                <div class="custom_filed custom_basic">
+                                                    <div class="form-group mb-0">
+                                                        <label for="Id" class="basic">Will you handover cash in a sealed bag or do 
+                                                            you<br> require counting and verification in your office?
+                                                        </label>
+                                                        <ul class="verification">
+                                                            <li>
+                                                                <input type="radio" id="Sealed" checked  name="accessType" value="R"
+                                                                    formControlName="accessType">
+                                                                <label for="Sealed">Sealed Bag</label>
+                                                            </li>
+                                                            <li>
+                                                                <input type="radio" id="Counting" name="accessType" value="RW"
+                                                                    formControlName="accessType">
+                                                                <label for="Counting">Counting & Verification</label>
+                                                            </li>
+                                                        </ul>
+
+                                                        <div class="note_rm verification">
+                                                            <div class="heading">
+                                                                <h3>Note for RM:</h3>
+                                                            </div>
+                                                            <ul class="note">
+                                                                <li>Sealed Bag - Cash is packed in a bag and vendor seal the 
+                                                                    bag, pick and drop in the branch
+                                                                </li>
+                                                                <li>Counting and Verification - The vendor will do the counting 
+                                                                    and verification of cash at the customers premises
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+
+                                    <div class="col-md-12 mt-4 text-center">
+                                        <div class="next_btn basic_ques">
+                                            <button name="next" class="custom mt-0" onclick="location.href = 'collection-answer.html';">Next <img src="assets/img/right_arrow.svg"></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <script src="assets/js/jquery.slim.min.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/fontawesome.js"></script>
+    <script src="assets/js/custom.js"></script>
+</body>
+
+</html>
