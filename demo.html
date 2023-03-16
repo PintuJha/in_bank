@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>induslnd-bank</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg">
+            <a href="javascript:void(0);" class="navbar-brand">
+                <img src="assets/img/logo.svg">
+            </a>
+            <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"><i class="fa-solid fa-bars"></i></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav ml-auto">
+                    <li clas="navbar-item">
+                        <a href="javascript:void(0);" class="nav-link">Home</a>
+                    </li>
+                    <li clas="navbar-item">
+                        <a href="javascript:void(0);" class="nav-link">Terms & Conditions</a>
+                    </li>
+                    <li clas="navbar-item">
+                        <a href="javascript:void(0);" class="nav-link">Privacy Policy</a>
+                    </li>
+                    <li clas="navbar-item">
+                        <a href="javascript:void(0);" class="nav-link">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <section class="multistep_sec">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="back">
+                        <p><a href="login.html"><img src="assets/img/left_arrow.svg"> Back</a></p>
+                    </div>
+                    <div class="container-fluid">
+                        <div class="row justify-content-center">
+                            <div class="col-xl-12 text-center">
+                                <div class="card mb-3">
+                                    <div id="msform">
+                                        <ul id="progressbar">
+                                            <li class="active" id="customer"><strong>Customer <br>Information</strong></li>
+                                            <li id="basic"><strong>Basic Q & A</strong></li>
+                                            <li id="collection"><strong>Collection Q & A</strong></li>
+                                            <li id="payments"><strong>Payments Q & A</strong></li>
+                                            <li id="summary"><strong>Summary Page</strong></li>
+                                        </ul>
+                                        <fieldset>
+                                            <div class="form-card">
+                                                <div class="row">
+                                                    <div class="col-md-4">
+                                                        <div class="cus_img">
+                                                            <img src="assets/img/user.png">
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="col-md-8">
+                                                        <form action="">
+                                                            <div class="cus_form">
+                                                                <div class="row">
+                                                                    <div class="col-md-6 mb-3">
+                                                                        <div class="custom_filed">
+                                                                            <div class="form-group">
+                                                                                <label for="Id">Customer Name</label>
+                                                                                <input type="text" class="form-control"
+                                                                                    placeholder="Enter Customer Name"
+                                                                                    id="Id">
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-md-6 mb-3">
+                                                                        <div class="custom_filed">
+                                                                            <div class="form-group">
+                                                                                <label for="Id">Select Segment</label>
+                                                                                <select>
+                                                                                    <option>Select Segment</option>
+                                                                                    <option>Comming soon</option>
+                                                                                    <option>Comming soon</option>
+                                                                                    <option>Comming soon</option>
+                                                                                    <option>Comming soon</option>
+                                                                                </select>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </form>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <button onclick="location.href = 'login.html';"
+                                                class="previous action-button-previous"><img
+                                                    src="assets/img/left_arrow.svg"> Back </button>
+
+                                            <button type="button" name="next" class="next action-button">
+                                                Click to Proceed
+                                            </button>
+                                        </fieldset>
+
+                                        <fieldset>
+                                            <div class="form-card">
+                                                <div class="row">
+                                                    <div class="col-md-4">
+                                                        <div class="cus_img">
+                                                            <img src="assets/img/user.png">
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="col-md-8">
+                                                        <form action="">
+                                                            <div class="cus_form">
+                                                                <div class="row justify-content-center">
+                                                                    <div class="col-md-8 mb-3">
+                                                                        <div class="custom_filed custom_basic">
+                                                                            <div class="form-group">
+                                                                                <label for="Id" class="basic">Average annual fee collection per student in Rs?</label>
+                                                                                <input type="number" class="form-control"
+                                                                                    placeholder="Rs. 00000.00"
+                                                                                    id="Id">
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+
+                                                                    <div class="col-md-12">
+                                                                        <div class="note_rm">
+                                                                            <div class="heading">
+                                                                                <h3>Note for RM:</h3>
+                                                                            </div>
+                                                                            <ul class="note">
+                                                                                <li>Benefits of Centralised Accounting</li>
+                                                                                <li>Ideal for entities having multiple locations</li>
+                                                                                <li>Centralization of Cash-Flow brings ease in
+                                                                                    managing cash flow forecasting.</li>
+                                                                                <li> No last minute reconciliations</li>
+                                                                                        <li>Enables 100% Automation in Fund Concentration across all your in-house bank accounts</li>
+                                                                            </ul>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </form>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <button name="previous" class="previous action-button-previous"><img
+                                                    src="assets/img/left_arrow.svg"> Back </button>
+                                            <button name="next" class="next action-button" value="">Next <img
+                                                    src="assets/img/right_arrow.svg"></button>
+                                        </fieldset>
+
+                                        <fieldset>
+                                            <div class="form-card">
+                                                <div class="row">
+                                                    <div class="col-md-4">
+                                                        <div class="cus_img">
+                                                            <img src="assets/img/metting.svg">
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="col-md-8">
+                                                        <form action="" class="collection_summary">
+                                                            <div class="cus_form">
+                                                                <div class="row">
+                                                                    <div class="col-md-12 mb-3">
+                                                                        <div class="answer_summary">
+                                                                           <div class="heading">
+                                                                            <h3>Answer Summary</h3>
+                                                                            <div class="question">
+                                                                                <p>1. How do you collect your fees?</p>
+                                                                                <h3>Cash</h3>
+                                                                            </div>
+                                                                            <div class="question">
+                                                                                <p>2. Do you have any cash pickup facility?</p>
+                                                                                <h3>Yes</h3>
+                                                                            </div>
+                                                                            <div class="question mb-0">
+                                                                                <p>3. Will you handover cash in a sealed bag or do you require counting and verification in your office?</p>
+                                                                                <h3>Sealed Bag</h3>
+                                                                            </div>
+                                                                           </div>
+                                                                        </div>
+                                                                        </div>
+                                                                    </div>
+                                                                   
+                                                                </div>
+                                                           
+                                                        </form>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <button name="previous" class="previous action-button-previous"><img
+                                                    src="assets/img/left_arrow.svg"> Back </button>
+                                            <button name="next" class="next action-button" value="">Done</button>
+                                        </fieldset>
+                                   
+                                   
+                                        <fieldset class="pt-0">
+                                            <div class="form-card">
+                                                <div class="row">
+                                                    <div class="col-md-12">
+                                                        <div class="getepay_video">
+                                                            <button class="video"><img src="assets/img/video.svg">Getepay Video</button>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <div class="cus_img">
+                                                            <img src="assets/img/payment_erp.svg">
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="col-md-8">
+                                                        <form action="">
+                                                            <div class="cus_form">
+                                                                <div class="row justify-content-center">
+                                                                    <div class="col-md-8 mb-3">
+                                                                        <div class="custom_filed custom_basic">
+                                                                            <div class="form-group">
+                                                                                <label for="Id" class="basic">Do you use any ERP Solution?</label>
+                                                                                <ul>
+                                                                                    <li>
+                                                                                        <input type="radio" id="Yes" name="accessType" value="R"
+                                                                                            formControlName="accessType">
+                                                                                        <label for="Yes">Yes</label>
+                                                                                    </li>
+                                                                                    <li>
+                                                                                        <input type="radio" id="No" name="accessType" value="RW"
+                                                                                            formControlName="accessType">
+                                                                                        <label for="No">No</label>
+                                                                                    </li>
+                                                                                </ul>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </form>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <button name="previous" class="previous action-button-previous"><img
+                                                    src="assets/img/left_arrow.svg"> Back </button>
+                                            <button name="next" class="next action-button" value="">Next <img
+                                                    src="assets/img/right_arrow.svg"></button>
+                                        </fieldset>
+
+
+                                        <fieldset class="pt-0 summary" style=" width: 75% !important;
+                                        margin: 0px auto;background: #F9F9F9;border-radius: 10px 10px 0px 0px;">
+                                            <div class="form-card ">
+                                                <div class="row">
+                                                    <div class="col-md-12">
+                                                        <form action="" class="collection_summary">
+                                                            <div class="cus_form">
+                                                                <div class="row">
+                                                                    <div class="col-md-12">
+                                                                        <div class="box_summary">
+                                                                           <div class="heading">
+                                                                            <h3>Summary</h3>
+                                                                             <p>IndusInd Bank offers you a technologically advanced, convenient and digitized cash management services, these services are integral part to any business. We deliver state of the art service levels to our customers, as we understand how important timely collections and payments are for your business. Hence, we would like to offer you Cash Management Services as per your business requirements.</p>
+                                                                           </div>
+                                                                           <div class="cash_pickup">
+                                                                              <div class="img">
+                                                                                <img src="assets/img/cash.svg">
+                                                                              </div>
+                                                                              <div class="heading">
+                                                                                <h3>Cash Pickup</h3>
+                                                                                <p>
+                                                                                    Solution to collect cash from your premises as<br>
+                                                                                    per agreed time and frequency.</p>
+                                                                              </div>
+                                                                           </div>
+                                                                           <div class="heading">
+                                                                            <p>You can proceed by clicking on Submit button and a consolidated offer letter will be emailed
+                                                                                by your Relationship Manager on your official email ID</p>
+                                                                           </div>
+                                                                        </div>
+                                                                        </div>
+                                                                    </div>
+                                                                   
+                                                                </div>
+                                                           
+                                                        </form>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <button name="previous" class="previous action-button-previous"><img
+                                                src="assets/img/left_arrow.svg"> Back </button>
+                                        <button name="next" class="submit" value="">Submit</button>
+                                        </fieldset>
+                                    
+                                    
+                                      </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+    </section>
+
+
+    <script src="assets/js/jquery.slim.min.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/fontawesome.js"></script>
+    <script src="assets/js/custom.js"></script>
+</body>
+
+</html>
