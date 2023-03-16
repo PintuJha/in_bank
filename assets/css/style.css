@@ -469,14 +469,14 @@ section.multistep_sec .menu_link_section .content_box .form-card form .cus_form.
   margin-bottom: 11px;
 }
 section.multistep_sec .menu_link_section .content_box .form-card form .cus_form.basic_question_box .custom_filed.custom_basic .form-group ul.verification li {
-  width: 35%;
+  width: auto;
 }
 section.multistep_sec .menu_link_section .content_box .form-card form .cus_form.basic_question_box .custom_filed.custom_basic .form-group ul {
   justify-content: center;
   margin-top: 20px;
 }
 section.multistep_sec .menu_link_section .content_box .form-card form .cus_form.basic_question_box .custom_filed.custom_basic .form-group ul li {
-  width: 30%;
+  width: auto;
 }
 section.multistep_sec .menu_link_section .content_box .form-card form .cus_form .custom_filed.custom_basic.annual-fee .form-group input[type=number]::-webkit-inner-spin-button,
 section.multistep_sec .menu_link_section .content_box .form-card form .cus_form .custom_filed.custom_basic.annual-fee .form-group input[type=number]::-webkit-outer-spin-button {
