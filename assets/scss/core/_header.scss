@@ -53,14 +53,22 @@ section {
 
                 h3 {
                     margin: 0px;
-                    font-weight: 600;
-                    font-size: 24px;
-                    line-height: 30px;
                     color: #1B1B1B;
-
+                    font-weight: 600;
+                    font-size: 20px;
+                    line-height: 24px;
+                }
+                p {
+                    margin: 0px;
+                    font-weight: 400;
+                    font-size: 26px;
+                    line-height: 31px;
+                    color: #1B1B1B;
+                    margin-bottom: 12px;
                     span {
-                        font-weight: 300;
-                        font-size: 22px;
+                        color: #97262A;
+                        font-weight: 600;
+                        font-family: 'Lucida Sans Italic';
                     }
                 }
             }
@@ -79,8 +87,7 @@ section {
                     border: none;
                     padding: 15px 35px;
                     background: #97262A;
-                    border-radius: 40px;
-                    width: 100%;
+                    border-radius: 10px;
                 }
             }
 
