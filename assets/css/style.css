@@ -479,6 +479,12 @@ section.multistep_sec .menu_link_section .content_box .form-card .summary_box .h
   font-size: 15px;
   line-height: 26px;
 }
+section.multistep_sec .menu_link_section .content_box .form-card .summary_box .recommended_box.web {
+  display: block;
+}
+section.multistep_sec .menu_link_section .content_box .form-card .summary_box .recommended_box.mobile {
+  display: none;
+}
 section.multistep_sec .menu_link_section .content_box .form-card .summary_box .recommended_box h4 {
   font-weight: 600;
   font-size: 18px;
@@ -925,6 +931,19 @@ section.multistep_sec .menu_link_section .content_box .form-card form .cus_form 
   }
 }
 @media (max-width: 767.98px) {
+  section.multistep_sec .menu_link_section .content_box .form-card form .cus_form.basic_question_box .custom_filed.custom_basic .form-group ul.verification li {
+    width: 48%;
+    height: auto;
+  }
+  section.multistep_sec .menu_link_section .content_box .form-card form .cus_form.basic_question_box .custom_filed.custom_basic.appear_radio_btn {
+    width: 100%;
+  }
+  section.multistep_sec .menu_link_section .content_box .form-card form .cus_form.basic_question_box .custom_filed.custom_basic.appear_radio_btn .form-group ul {
+    display: block;
+  }
+  section.multistep_sec .menu_link_section .content_box .form-card form .cus_form.basic_question_box .custom_filed.custom_basic.appear_radio_btn .form-group ul li {
+    width: 100%;
+  }
   section.multistep_sec .menu_link_section .content_box .form-card form .cus_form .custom_filed.custom_basic .form-group ul li [type=radio]:checked + label,
 section.multistep_sec .menu_link_section .content_box .form-card form .cus_form .custom_filed.custom_basic .form-group ul li [type=radio]:not(:checked) + label {
     position: relative;
@@ -937,7 +956,7 @@ section.multistep_sec .menu_link_section .content_box .form-card form .cus_form 
     font-weight: 600;
     font-size: 12px;
     color: #1B1B1B;
-    padding: 13px 0px 0px 45px;
+    padding: 13px 15px 0px 45px;
   }
   header nav.navbar.navbar-expand-lg {
     padding: 0px 15px;
@@ -963,8 +982,199 @@ section.multistep_sec .menu_link_section .content_box .form-card form .cus_form 
   section.multistep_sec .menu_link_section .content_box {
     padding-top: 20px;
   }
+  section.multistep_sec .menu_link_section .content_box .form-card .summary_box {
+    padding: 15px;
+  }
+  section.multistep_sec .menu_link_section .content_box .form-card .summary_box .heading h3 {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 26px;
+    text-align: center;
+    color: #231F20;
+    margin-bottom: 20px;
+  }
+  section.multistep_sec .menu_link_section .content_box .form-card .summary_box .heading p {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 27px;
+  }
+  section.multistep_sec .menu_link_section .content_box .form-card .summary_box .heading p br {
+    margin-bottom: 10px;
+    display: block;
+  }
+  section.multistep_sec .menu_link_section .content_box .form-card .summary_box .recommended_box.web {
+    display: none;
+  }
+  section.multistep_sec .menu_link_section .content_box .form-card .summary_box .recommended_box.mobile {
+    display: block;
+  }
+  section.multistep_sec .menu_link_section .content_box .form-card .summary_box .recommended_box.mobile .recommended_mobile .recommended_card {
+    background: #FFFFFF;
+    box-shadow: 0px 0px 6px #DEDEDE;
+    border-radius: 12px;
+    padding: 15px;
+  }
+  section.multistep_sec .menu_link_section .content_box .form-card .summary_box .recommended_box.mobile .recommended_mobile .recommended_card .rec_content p {
+    margin: 0px;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 20px;
+    margin-bottom: 7px;
+  }
+  section.multistep_sec .menu_link_section .content_box .form-card .summary_box .recommended_box.mobile .recommended_mobile .recommended_card .rec_content p a {
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 14px;
+    color: #7AA0E9;
+    text-decoration-line: underline;
+  }
+  section.multistep_sec .menu_link_section .content_box .form-card .summary_box .recommended_box.mobile .recommended_mobile .recommended_card .top_rec {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-bottom: 15px;
+  }
+  section.multistep_sec .menu_link_section .content_box .form-card .summary_box .recommended_box.mobile .recommended_mobile .recommended_card .top_rec .text_list {
+    display: flex;
+    align-items: center;
+  }
+  section.multistep_sec .menu_link_section .content_box .form-card .summary_box .recommended_box.mobile .recommended_mobile .recommended_card .top_rec .text_list .icon {
+    margin-right: 12px;
+  }
+  section.multistep_sec .menu_link_section .content_box .form-card .summary_box .recommended_box.mobile .recommended_mobile .recommended_card .top_rec .text_list .icon img {
+    width: 50px;
+  }
+  section.multistep_sec .menu_link_section .content_box .form-card .summary_box .recommended_box.mobile .recommended_mobile .recommended_card .top_rec .text_list .text p {
+    margin: 0px;
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 20px;
+    color: black;
+  }
+  section.multistep_sec .menu_link_section .content_box .form-card .summary_details_box {
+    width: 100%;
+    margin: 0px auto;
+    background: #ffffff;
+    padding: 0px;
+  }
+  section.multistep_sec .menu_link_section .content_box .form-card .summary_details_box .customer_details .form-group label {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  section.multistep_sec .menu_link_section .content_box .form-card .summary_details_box .customer_details .form-group textarea {
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 19px;
+  }
+  section.multistep_sec .menu_link_section .content_box .form-card .summary_details_box .customer_details .form-group input {
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 19px;
+  }
+  section.multistep_sec .menu_link_section .content_box .form-card .summary_details_box .customer_details .customer_heading h3 {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 20px;
+    color: #000000;
+    margin: 10px 0px 0px;
+  }
+  section.multistep_sec .menu_link_section .content_box .form-card .summary_details_box .top_box {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+  }
+  section.multistep_sec .menu_link_section .content_box .form-card .summary_details_box .top_box .icon {
+    margin-bottom: 12px;
+  }
+  section.multistep_sec .menu_link_section .content_box .form-card .summary_details_box .top_box .icon img {
+    width: 175px;
+  }
+  section.multistep_sec .menu_link_section .content_box .form-card .summary_details_box .top_box .heading_box {
+    text-align: center;
+  }
+  section.multistep_sec .menu_link_section .content_box .form-card .summary_details_box .top_box .heading_box h4 {
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 30px;
+  }
+  section.multistep_sec .menu_link_section .content_box .form-card .summary_details_box .top_box .heading_box p {
+    margin-top: 12px;
+  }
+  section.multistep_sec .menu_link_section .content_box .form-card .summary_details_box .top_box .heading_box p br {
+    display: none;
+  }
+  section.multistep_sec .menu_link_section .content_box .form-card .answer_summary .heading .question h3 {
+    margin: 0px;
+    color: #98272A;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    padding-inline-start: 18px;
+  }
+  section.multistep_sec .menu_link_section .content_box .form-card .answer_summary .heading .question p {
+    margin: 0px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: #000000;
+    margin-bottom: 10px;
+  }
+  section.multistep_sec .menu_link_section .content_box .form-card .answer_summary .heading h3 {
+    font-weight: 600;
+    font-size: 18px;
+    color: #1B1B1B;
+    margin-bottom: 12px;
+  }
+  section.multistep_sec .menu_link_section .content_box .form-card .next_btn.basic_ques button.custom.done {
+    margin-top: 22px;
+    font-size: 14px;
+  }
+  section.multistep_sec .menu_link_section .content_box .form-card .next_btn button.custom_back {
+    display: none;
+  }
   section.multistep_sec .menu_link_section .content_box .form-card .cus_img {
     display: none;
+  }
+  section.multistep_sec .menu_link_section .content_box .form-card form .cus_form.basic_question_box .custom_filed.custom_basic .form-group ul li {
+    width: 48%;
+    height: auto;
+  }
+  section.multistep_sec .menu_link_section .content_box .form-card form .cus_form.basic_question_box .custom_filed.custom_basic .form-group label {
+    font-size: 18px;
+    line-height: 25px;
+  }
+  section.multistep_sec .menu_link_section .content_box .form-card form .cus_form.basic_question_box .custom_filed.custom_basic .form-group label br {
+    display: none;
+  }
+  section.multistep_sec .menu_link_section .content_box .form-card form .cus_form .custom_filed.custom_basic.annual-fee .form-group input {
+    width: 100%;
+  }
+  section.multistep_sec .menu_link_section .content_box .form-card form .cus_form .custom_filed.custom_basic .form-group.collection-question ul {
+    justify-content: flex-start;
+  }
+  section.multistep_sec .menu_link_section .content_box .form-card form .cus_form .custom_filed.custom_basic .form-group.collection-question ul li {
+    width: auto;
+    height: auto;
+  }
+  section.multistep_sec .menu_link_section .content_box .form-card form .cus_form .custom_filed.custom_basic .form-group.collection-question ul li input[type=checkbox] {
+    margin: 0 0em 0 0;
+    height: 24px;
+    width: 24px;
+  }
+  section.multistep_sec .menu_link_section .content_box .form-card form .cus_form .custom_filed.custom_basic .form-group.collection-question ul li input[type=checkbox]::before {
+    top: 50%;
+    width: 6px;
+    height: 14px;
+  }
+  section.multistep_sec .menu_link_section .content_box .form-card form .cus_form .custom_filed.custom_basic .form-group.collection-question ul li label {
+    font-size: 14px;
+    line-height: 21px;
+    color: #231F20;
+    margin-left: 5px;
+  }
+  section.multistep_sec .menu_link_section .content_box .form-card form .cus_form .custom_filed.custom_basic .form-group ul.verification {
+    justify-content: flex-start;
   }
   section.multistep_sec .menu_link_section .content_box .form-card form .cus_form .custom_filed.custom_basic .form-group ul {
     gap: 12px 10px;

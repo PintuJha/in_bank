@@ -12,7 +12,7 @@
     font-style: normal;
     font-weight: normal;
     src: local('Lucida Sans Italic'), url('../scss/LSANSI.woff') format('woff');
-    }
+}
 
 @import "core/header";
 
@@ -38,6 +38,7 @@
 ::-webkit-scrollbar-thumb:hover {
     background: #7c1e21;
 }
+
 body {
     font-family: 'lucida_sansregular';
     font-size: 14px;
@@ -195,8 +196,10 @@ section.multistep_sec {
 
                     .customer_details {
                         margin-top: 30px;
+
                         .confirm_btn {
                             text-align: center;
+
                             button.confirm {
                                 border: none;
                                 background: #98272A;
@@ -207,6 +210,7 @@ section.multistep_sec {
                                 line-height: 19px;
                                 padding: 14px 35px;
                             }
+
                             button.no.confirm {
                                 background: white;
                                 border: 1px solid #98272A;
@@ -214,6 +218,7 @@ section.multistep_sec {
                                 color: #1B1B1B;
                             }
                         }
+
                         .form-group {
                             margin: 0px;
 
@@ -223,7 +228,8 @@ section.multistep_sec {
                                 line-height: 19px;
                                 color: #1B1B1B;
                             }
-                            textarea{
+
+                            textarea {
                                 background: #FFFFFF;
                                 border: 1px solid #C4C4C4;
                                 border-radius: 10px;
@@ -234,6 +240,7 @@ section.multistep_sec {
                                 line-height: 19px;
                                 color: #1B1B1B;
                                 resize: none;
+
                                 &:focus {
                                     color: #1B1B1B;
                                     background-color: #fff;
@@ -242,6 +249,7 @@ section.multistep_sec {
                                     box-shadow: 0 0 0 0rem rgba(0, 123, 255, .25);
                                 }
                             }
+
                             input {
                                 background: #FFFFFF;
                                 border: 1px solid #C4C4C4;
@@ -322,6 +330,14 @@ section.multistep_sec {
                             font-size: 15px;
                             line-height: 26px;
                         }
+                    }
+
+                    .recommended_box.web {
+                        display: block;
+                    }
+
+                    .recommended_box.mobile {
+                        display: none;
                     }
 
                     .recommended_box {
@@ -604,6 +620,7 @@ section.multistep_sec {
                                     }
                                 }
                             }
+
                             .form-group {
                                 label {
                                     margin-bottom: 12px;
@@ -612,10 +629,12 @@ section.multistep_sec {
                                     line-height: 30px;
                                     color: #231F20;
                                     text-align: center;
-                                    display: block;  
+                                    display: block;
                                 }
+
                                 .note_rm.verification {
                                     margin-top: 40px;
+
                                     .heading {
                                         h3 {
                                             font-weight: 500;
@@ -623,13 +642,16 @@ section.multistep_sec {
                                             line-height: 14px;
                                             color: #1B1B1B;
                                         }
+
                                         margin-bottom: 15px;
                                     }
+
                                     ul.note {
                                         column-count: 1;
                                         padding-inline-start: 20px;
                                         display: block;
                                         list-style-type: disc;
+
                                         li {
                                             width: auto;
                                             border: none;
@@ -641,11 +663,13 @@ section.multistep_sec {
                                         }
                                     }
                                 }
+
                                 ul.verification {
                                     li {
                                         width: auto;
                                     }
                                 }
+
                                 ul {
                                     justify-content: center;
                                     margin-top: 20px;
@@ -914,6 +938,26 @@ section.multistep_sec {
 
 @media (max-width: 767.98px) {
 
+
+    section.multistep_sec .menu_link_section .content_box .form-card form .cus_form.basic_question_box .custom_filed.custom_basic .form-group ul.verification li {
+        width: 48%;
+        height: auto;
+    }
+
+    section.multistep_sec .menu_link_section .content_box .form-card form .cus_form.basic_question_box .custom_filed.custom_basic.appear_radio_btn {
+        width: 100%;
+
+        .form-group ul {
+            display: block;
+
+            li {
+                width: 100%;
+            }
+        }
+    }
+
+
+
     section.multistep_sec .menu_link_section .content_box .form-card form .cus_form .custom_filed.custom_basic .form-group ul li [type=radio]:checked+label,
     section.multistep_sec .menu_link_section .content_box .form-card form .cus_form .custom_filed.custom_basic .form-group ul li [type=radio]:not(:checked)+label {
         position: relative;
@@ -926,7 +970,7 @@ section.multistep_sec {
         font-weight: 600;
         font-size: 12px;
         color: #1B1B1B;
-        padding: 13px 0px 0px 45px;
+        padding: 13px 15px 0px 45px;
     }
 
     header nav.navbar.navbar-expand-lg {
@@ -963,14 +1007,276 @@ section.multistep_sec {
                 padding-top: 20px;
 
                 .form-card {
+                    .summary_box {
+                        padding: 15px;
+                        .heading {
+                            h3 {
+                                font-weight: 600;
+                                font-size: 20px;
+                                line-height: 26px;
+                                text-align: center;
+                                color: #231F20;
+                                margin-bottom: 20px;
+                            }
+
+                            p {
+                                font-weight: 400;
+                                font-size: 14px;
+                                line-height: 27px;
+
+                                br {
+                                    margin-bottom: 10px;
+                                    display: block;
+                                }
+                            }
+                        }
+
+                        .recommended_box.web {
+                            display: none;
+                        }
+
+                        .recommended_box.mobile {
+                            display: block;
+                            .recommended_mobile{
+                                .recommended_card {
+                                    background: #FFFFFF;
+                                    box-shadow: 0px 0px 6px #DEDEDE;
+                                    border-radius: 12px;
+                                    padding: 15px;
+                                    .rec_content{
+                                        p{
+                                            margin: 0px;
+                                            font-weight: 400;
+                                            font-size: 13px;
+                                            line-height: 20px;
+                                            margin-bottom: 7px;
+                                            a {
+                                                font-weight: 600;
+                                                font-size: 12px;
+                                                line-height: 14px;
+                                                color: #7AA0E9;
+                                                text-decoration-line: underline;
+                                            }
+                                        }
+                                    }
+                                    .top_rec {
+                                        display: flex;
+                                        align-items: flex-start;
+                                        justify-content: space-between;
+                                        margin-bottom: 15px;
+                                        .text_list {
+                                            display: flex;
+                                            align-items: center;
+                                            .icon {
+                                                margin-right: 12px;
+                                                img {
+                                                    width: 50px;
+                                                }
+                                            }
+                                            .text{
+                                                p {
+                                                    margin: 0px;
+                                                    font-weight: 600;
+                                                    font-size: 13px;
+                                                    line-height: 20px;
+                                                    color: black;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    .summary_details_box {
+                        width: 100%;
+                        margin: 0px auto;
+                        background: #ffffff;
+                        padding: 0px;
+
+                        .customer_details {
+                            .form-group {
+                                label {
+                                    font-size: 14px;
+                                    line-height: 20px;
+                                }
+
+                                textarea {
+                                    font-weight: 500;
+                                    font-size: 15px;
+                                    line-height: 19px;
+                                }
+
+                                input {
+
+                                    font-weight: 500;
+                                    font-size: 15px;
+                                    line-height: 19px;
+                                }
+                            }
+
+                            .customer_heading {
+                                h3 {
+
+                                    font-weight: 600;
+                                    font-size: 18px;
+                                    line-height: 20px;
+                                    color: #000000;
+                                    margin: 10px 0px 0px;
+
+                                }
+                            }
+                        }
+
+                        .top_box {
+                            display: flex;
+                            flex-direction: column-reverse;
+                            align-items: center;
+                            justify-content: center;
+
+                            .icon {
+                                margin-bottom: 12px;
+
+                                img {
+                                    width: 175px;
+                                }
+                            }
+
+                            .heading_box {
+                                text-align: center;
+
+                                h4 {
+                                    font-weight: 600;
+                                    font-size: 22px;
+                                    line-height: 30px;
+                                }
+
+                                p {
+                                    margin-top: 12px;
+
+                                    br {
+                                        display: none;
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    .answer_summary {
+                        .heading {
+                            .question {
+                                h3 {
+                                    margin: 0px;
+                                    color: #98272A;
+                                    font-weight: 600;
+                                    font-size: 16px;
+                                    line-height: 20px;
+                                    padding-inline-start: 18px;
+                                }
+
+                                p {
+                                    margin: 0px;
+                                    font-weight: 400;
+                                    font-size: 14px;
+                                    line-height: 20px;
+                                    color: #000000;
+                                    margin-bottom: 10px;
+                                }
+                            }
+
+                            h3 {
+                                font-weight: 600;
+                                font-size: 18px;
+                                color: #1B1B1B;
+                                margin-bottom: 12px;
+                            }
+                        }
+                    }
+
+                    .next_btn.basic_ques {
+                        button.custom.done {
+                            margin-top: 22px;
+                            font-size: 14px;
+                        }
+                    }
+
+                    .next_btn {
+                        button.custom_back {
+                            display: none;
+                        }
+                    }
+
                     .cus_img {
                         display: none;
                     }
 
                     form {
-                        .cus_form {
+                        .cus_form.basic_question_box {
                             .custom_filed.custom_basic {
                                 .form-group {
+                                    ul li {
+                                        width: 48%;
+                                        height: auto;
+                                    }
+
+                                    label {
+                                        font-size: 18px;
+                                        line-height: 25px;
+
+                                        br {
+                                            display: none;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+
+                        .cus_form {
+                            .custom_filed.custom_basic.annual-fee {
+                                .form-group {
+                                    input {
+                                        width: 100%;
+                                    }
+                                }
+                            }
+
+                            .custom_filed.custom_basic {
+                                .form-group.collection-question {
+                                    ul {
+                                        justify-content: flex-start;
+
+                                        li {
+                                            width: auto;
+                                            height: auto;
+
+                                            input[type=checkbox] {
+                                                margin: 0 0em 0 0;
+                                                height: 24px;
+                                                width: 24px;
+
+                                                &::before {
+                                                    top: 50%;
+                                                    width: 6px;
+                                                    height: 14px;
+                                                }
+                                            }
+
+                                            label {
+                                                font-size: 14px;
+                                                line-height: 21px;
+                                                color: #231F20;
+                                                margin-left: 5px;
+                                            }
+                                        }
+                                    }
+                                }
+
+                                .form-group {
+                                    ul.verification {
+                                        justify-content: flex-start;
+                                    }
+
                                     ul {
                                         gap: 12px 10px;
 
