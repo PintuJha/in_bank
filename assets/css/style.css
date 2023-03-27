@@ -1033,9 +1033,70 @@ section.multistep_sec .menu_link_section .content_box .form-card form .cus_form 
   transform: scale(1);
 }
 
+@media (max-width: 1366.98px) {
+  .tooltip .tooltiptext ul li {
+    border: 0px !important;
+    font-size: 13px;
+    height: auto !important;
+    line-height: 20px !important;
+    margin-bottom: 2px !important;
+  }
+  section.multistep_sec .menu_link_section .link {
+    width: 70%;
+    margin: 0px auto 35px;
+  }
+  section.multistep_sec .menu_link_section .content_box {
+    padding-top: 30px !important;
+  }
+  section.multistep_sec .menu_link_section .content_box .form-card form .cus_form.basic_question_box .custom_filed.custom_basic.appear_radio_btn .form-group ul li {
+    margin-bottom: 10px;
+  }
+  section.multistep_sec .menu_link_section .content_box .form-card .answer_summary {
+    padding: 15px;
+  }
+  section.multistep_sec .menu_link_section .content_box .form-card .answer_summary .heading h3 {
+    font-weight: 600;
+    font-size: 18px;
+    color: #1B1B1B;
+    margin-bottom: 12px;
+  }
+  section.multistep_sec .menu_link_section .content_box .form-card .answer_summary .heading .question {
+    margin-bottom: 5px;
+  }
+  section.multistep_sec .menu_link_section .content_box .form-card .answer_summary .heading .question p {
+    margin: 0px;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 20px;
+    color: #000000;
+    margin-bottom: 6px;
+  }
+  section.multistep_sec .menu_link_section .content_box .form-card .answer_summary .heading .question h3 {
+    margin: 0px;
+    color: #98272A;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+    padding-inline-start: 18px;
+  }
+  section.multistep_sec .menu_link_section .content_box .form-card .cus_img img {
+    width: 200px;
+  }
+  section.multistep_sec .menu_link_section .content_box .form-card .next_btn button {
+    margin-top: 0px;
+  }
+  section .sale_assist_sec {
+    height: 90.4vh;
+  }
+}
+@media (max-width: 1280.98px) {
+  section .sale_assist_sec {
+    height: 89.6vh;
+  }
+}
 @media (max-width: 1199.98px) {
   section.multistep_sec .menu_link_section .content_box .form-card .cus_img img {
-    width: 100%;
+    width: 200px;
   }
 }
 @media (max-width: 991.98px) {
