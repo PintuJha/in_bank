@@ -298,6 +298,7 @@ section .sale_assist_sec .login_img_sec .login_icon .finance_heading .app_bankin
 
 ::-webkit-scrollbar {
   width: 6px;
+  height: 6px;
 }
 
 ::-webkit-scrollbar-track {
@@ -1038,6 +1039,9 @@ section.multistep_sec .menu_link_section .content_box .form-card form .cus_form 
   }
 }
 @media (max-width: 991.98px) {
+  .tooltip .tooltiptext {
+    left: inherit;
+  }
   section.multistep_sec .menu_link_section .link {
     width: 80%;
   }
@@ -1300,6 +1304,12 @@ section.multistep_sec .menu_link_section .content_box .form-card form .cus_form 
   section.multistep_sec .menu_link_section .content_box .form-card .next_btn button.custom_back {
     display: none;
   }
+  section.multistep_sec .menu_link_section .content_box .form-card .cus_img.basic_sec {
+    display: block;
+  }
+  section.multistep_sec .menu_link_section .content_box .form-card .cus_img.basic_sec img {
+    width: 245px;
+  }
   section.multistep_sec .menu_link_section .content_box .form-card .cus_img {
     display: none;
   }
@@ -1354,6 +1364,7 @@ section.multistep_sec .menu_link_section .content_box .form-card form .cus_form 
   .tooltip .tooltiptext {
     width: 100%;
     min-width: 225px;
+    left: inherit;
   }
 }
 
