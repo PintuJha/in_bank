@@ -51,7 +51,7 @@ section .sale_assist_sec .login_field {
   align-items: center;
 }
 section .sale_assist_sec .login_field .heading {
-  margin-bottom: 18px;
+  margin-bottom: 40px;
 }
 section .sale_assist_sec .login_field .heading h3 {
   margin: 0px;
@@ -219,9 +219,81 @@ section .sale_assist_sec .login_img_sec .login_icon .finance_heading .app_bankin
     margin: 40px auto 0px;
   }
 }
+@media (max-width: 400.98px) {
+  section .sale_assist_sec .login_field .heading p {
+    margin: 0px;
+    font-weight: 400;
+    font-size: 19px;
+    line-height: 18px;
+    color: #1B1B1B;
+    margin-bottom: 12px;
+  }
+}
 * {
   margin: 0px;
   padding: 0px;
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 0px dotted black;
+  opacity: 1;
+}
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 100%;
+  min-width: 335px;
+  display: block;
+  text-align: left;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  top: 165%;
+  right: 0px;
+  left: 0px;
+  margin-left: -157px;
+  opacity: 0;
+  transition: opacity 0.3s;
+  background: #F2F2F2;
+  border-radius: 12px;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 12px;
+  color: #3E3E3E;
+}
+.tooltip .tooltiptext ul {
+  display: block !important;
+  padding: 12px !important;
+  list-style-type: disc !important;
+  padding-inline-start: 30px !important;
+  margin-top: 0px !important;
+}
+.tooltip .tooltiptext ul li {
+  border: 0px !important;
+  font-size: 14px;
+  height: auto !important;
+  line-height: 21px !important;
+  margin-bottom: 14px !important;
+}
+.tooltip .tooltiptext ul li:last-child {
+  margin-bottom: 0px !important;
+}
+
+.tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -20px;
+  border-width: 20px;
+  border-style: solid;
+  border-color: transparent transparent #f2f2f2 transparent;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
 }
 
 ::-webkit-scrollbar {
@@ -548,8 +620,54 @@ section.multistep_sec .menu_link_section .content_box .form-card .summary_box .r
   font-size: 15px;
   line-height: 22px;
   color: #000000;
-  padding: 20px 0px 20px 25px;
+  padding: 20px 12px 20px 25px;
   vertical-align: middle;
+}
+section.multistep_sec .menu_link_section .content_box .form-card .summary_box .recommended_box .recommended_table .table tbody tr td .radio_btn input[type=radio] {
+  display: none;
+}
+section.multistep_sec .menu_link_section .content_box .form-card .summary_box .recommended_box .recommended_table .table tbody tr td .radio_btn label {
+  cursor: pointer;
+  position: relative;
+  cursor: pointer;
+  position: relative;
+  margin: 0px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 16px;
+  margin: 0px;
+}
+section.multistep_sec .menu_link_section .content_box .form-card .summary_box .recommended_box .recommended_table .table tbody tr td .radio_btn label::before {
+  content: "";
+  position: absolute;
+  width: 22px;
+  height: 22px;
+  background-color: rgba(227, 221, 221, 0.1019607843);
+  border-radius: 50%;
+  border: 1px solid #D9D9D9;
+  top: 50%;
+  left: -30px;
+  transform: translateY(-50%);
+  transition: border-color 400ms ease;
+}
+section.multistep_sec .menu_link_section .content_box .form-card .summary_box .recommended_box .recommended_table .table tbody tr td .radio_btn label::after {
+  content: "";
+  position: absolute;
+  width: 22px;
+  height: 22px;
+  background-color: #98272A;
+  border: 2px solid #98272A;
+  border-radius: 50%;
+  top: 50%;
+  left: -30px;
+  transform: translateY(-50%) scale(0);
+  transition: transform 400ms ease;
+}
+section.multistep_sec .menu_link_section .content_box .form-card .summary_box .recommended_box .recommended_table .table tbody tr td .radio_btn input[type=radio]:checked + label::before {
+  border-color: #98272A;
+}
+section.multistep_sec .menu_link_section .content_box .form-card .summary_box .recommended_box .recommended_table .table tbody tr td .radio_btn input[type=radio]:checked + label::after {
+  transform: translateY(-50%) scale(0.55);
 }
 section.multistep_sec .menu_link_section .content_box .form-card .summary_box .recommended_box .recommended_table .table tbody tr td .custom-control.custom-checkbox {
   text-align: center;
@@ -931,6 +1049,9 @@ section.multistep_sec .menu_link_section .content_box .form-card form .cus_form 
   }
 }
 @media (max-width: 767.98px) {
+  .tooltip .tooltiptext ul li {
+    width: 100% !important;
+  }
   section.multistep_sec .menu_link_section .content_box .form-card form .cus_form.basic_question_box .custom_filed.custom_basic .form-group ul.verification li {
     width: 48%;
     height: auto;
@@ -1050,6 +1171,52 @@ section.multistep_sec .menu_link_section .content_box .form-card form .cus_form 
     font-size: 13px;
     line-height: 20px;
     color: black;
+  }
+  section.multistep_sec .menu_link_section .content_box .form-card .summary_box .recommended_box.mobile .recommended_mobile .recommended_card .top_rec .radio_btn input[type=radio] {
+    display: none;
+  }
+  section.multistep_sec .menu_link_section .content_box .form-card .summary_box .recommended_box.mobile .recommended_mobile .recommended_card .top_rec .radio_btn label {
+    cursor: pointer;
+    position: relative;
+    cursor: pointer;
+    position: relative;
+    margin: 0px;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 16px;
+    margin: 0px;
+  }
+  section.multistep_sec .menu_link_section .content_box .form-card .summary_box .recommended_box.mobile .recommended_mobile .recommended_card .top_rec .radio_btn label::before {
+    content: "";
+    position: absolute;
+    width: 22px;
+    height: 22px;
+    background-color: rgba(227, 221, 221, 0.1019607843);
+    border-radius: 50%;
+    border: 1px solid #D9D9D9;
+    top: 50%;
+    left: -30px;
+    transform: translateY(-50%);
+    transition: border-color 400ms ease;
+  }
+  section.multistep_sec .menu_link_section .content_box .form-card .summary_box .recommended_box.mobile .recommended_mobile .recommended_card .top_rec .radio_btn label::after {
+    content: "";
+    position: absolute;
+    width: 22px;
+    height: 22px;
+    background-color: #98272A;
+    border: 2px solid #98272A;
+    border-radius: 50%;
+    top: 50%;
+    left: -30px;
+    transform: translateY(-50%) scale(0);
+    transition: transform 400ms ease;
+  }
+  section.multistep_sec .menu_link_section .content_box .form-card .summary_box .recommended_box.mobile .recommended_mobile .recommended_card .top_rec .radio_btn input[type=radio]:checked + label::before {
+    border-color: #98272A;
+  }
+  section.multistep_sec .menu_link_section .content_box .form-card .summary_box .recommended_box.mobile .recommended_mobile .recommended_card .top_rec .radio_btn input[type=radio]:checked + label::after {
+    transform: translateY(-50%) scale(0.55);
   }
   section.multistep_sec .menu_link_section .content_box .form-card .summary_details_box {
     width: 100%;
@@ -1181,6 +1348,12 @@ section.multistep_sec .menu_link_section .content_box .form-card form .cus_form 
   }
   section.multistep_sec .menu_link_section .content_box .form-card form .cus_form .custom_filed.custom_basic .form-group ul li {
     width: 48%;
+  }
+}
+@media (max-width: 425.98px) {
+  .tooltip .tooltiptext {
+    width: 100%;
+    min-width: 225px;
   }
 }
 
