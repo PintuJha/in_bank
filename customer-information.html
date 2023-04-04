@@ -138,27 +138,84 @@
                                                         <label for="Id" class="basic">Customer Name</label>
                                                         <input type="text" class="form-control" placeholder="Enter Customer Name" id="Id">
                                                     </div>
+
+                                                    
                                                 </div>
                                             </div>
                                         </form>
                                     </div>
 
-                                    <div class="col-md-12 mt-4 text-center">
+                                    <div class="col-md-12 mt-2 text-center">
                                         <div class="next_btn">
+
                                             <button name="next" class="custom_back" onclick="location.href = 'customer-segment.html';">Back</button>
+
                                             <button name="next" class="custom" onclick="location.href = 'basic-qa-start.html';">Click to Proceed</button>
+
+                                            <p class="link_add mt-4">
+                                                <a href="javascript:void(0);" data-toggle="modal" data-target="#Generate">Generate Capability Offer Letter</a>
+                                            </p>
+
                                         </div>
                                     </div>
                                 </div>
                             </div>
-
-
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+
+
+<div class="modal fade" id="Generate">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-body">
+             <div class="generate_model">
+                <h3>Generate Capability Offer Letter</h3>
+                <div class="generate_form">
+                    <form>
+                        <div class="row">
+                            <div class="col-md-12 mb-3">
+                                <div class="field">
+                                    <div class="form-group">
+                                        <label for="text">Customer Name</label>
+                                        <input type="text" class="form-control" placeholder="Enter Customer Name" id="text">
+                                      </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <div class="field">
+                                    <div class="form-group">
+                                        <label for="text">Date Range</label>
+                                        <input type="date" class="form-control" placeholder="Enter Customer Name" id="text">
+                                      </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <div class="field">
+                                    <div class="form-group">
+                                        <label for="text">&nbsp;</label>
+                                        <input type="date" class="form-control" placeholder="Enter Customer Name" id="text">
+                                      </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-12">
+                                <div class="field_btn">
+                                    <button class="submit">Submit</button>
+                                </div>
+                            </div>
+
+                        </div>
+                    </form>
+                </div>
+             </div>
+            </div>
+        </div>
+    </div>
+</div>
 
 
     <script src="assets/js/jquery.slim.min.js"></script>

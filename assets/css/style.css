@@ -81,6 +81,12 @@ section .sale_assist_sec .form_box .custom_filed_process {
   text-align: center;
   margin-top: 15px;
 }
+section .sale_assist_sec .form_box .custom_filed_process button.process.reset {
+  background: #FFFFFF;
+  border: 1px solid #97262A;
+  border-radius: 10px;
+  color: #1B1B1B;
+}
 section .sale_assist_sec .form_box .custom_filed_process button.process {
   font-weight: 400;
   font-size: 16px;
@@ -91,7 +97,7 @@ section .sale_assist_sec .form_box .custom_filed_process button.process {
   border-radius: 10px;
 }
 section .sale_assist_sec .form_box .custom_filed .form-group {
-  margin: 0px;
+  margin-bottom: 15px;
   position: relative;
 }
 section .sale_assist_sec .form_box .custom_filed .form-group label {
@@ -172,6 +178,28 @@ section .sale_assist_sec .login_img_sec .login_icon .finance_heading .app_bankin
   width: 235px;
 }
 
+.form-group.success input {
+  border-color: #2ecc71 !important;
+}
+
+.form-group.error input {
+  border-color: #FF5A43 !important;
+}
+
+.form-group small {
+  color: #FF5A43;
+  position: absolute;
+  bottom: -25px;
+  left: 16px;
+  font-weight: 400;
+  font-size: 12px;
+  visibility: hidden;
+}
+
+.form-group.error small {
+  visibility: visible;
+}
+
 @media (max-width: 991.98px) {
   header nav.navbar.navbar-expand-lg .navbar-toggler {
     padding: 14px 0px;
@@ -232,6 +260,104 @@ section .sale_assist_sec .login_img_sec .login_icon .finance_heading .app_bankin
 * {
   margin: 0px;
   padding: 0px;
+}
+
+div#confirm .modal-content {
+  background: #FFFFFF;
+  border-radius: 12px;
+  border: 0px solid red;
+  padding: 12px;
+}
+div#confirm .modal-content button.close {
+  opacity: 1;
+  font-weight: 200;
+  font-size: 27px;
+}
+div#confirm .modal-content .con_content {
+  padding: 20px;
+  text-align: center;
+}
+div#confirm .modal-content .con_content img {
+  margin-bottom: 20px;
+  width: 60px;
+}
+div#confirm .modal-content .con_content h3 {
+  margin: 0px;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 30px;
+  color: #2BCC4F;
+  margin-bottom: 12px;
+}
+div#confirm .modal-content .con_content p {
+  margin-top: 15px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 23px;
+  color: #1B1B1B;
+}
+div#confirm .modal-content .con_content .resend_btn button.latter {
+  border: 0px;
+  background: #98272A;
+  border-radius: 12px;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 18px;
+  color: #FFFFFF;
+  padding: 12px 30px;
+  margin-top: 30px;
+}
+
+div#Generate .modal-content {
+  border-radius: 12px;
+  border: 0px solid red;
+  padding: 15px;
+}
+div#Generate .modal-content .generate_model h3 {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  color: #000000;
+  margin: 0px;
+}
+div#Generate .modal-content .generate_model .generate_form {
+  width: 65%;
+  margin: 45px auto 0px;
+}
+div#Generate .modal-content .generate_model .generate_form form .field_btn {
+  text-align: center;
+}
+div#Generate .modal-content .generate_model .generate_form form .field_btn button.submit {
+  background: #98272A;
+  border-radius: 12px;
+  color: white;
+  border: 0px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 21px;
+  padding: 12px 35px;
+}
+div#Generate .modal-content .generate_model .generate_form form .field .form-group label {
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 19px;
+  color: #231F20;
+}
+div#Generate .modal-content .generate_model .generate_form form .field .form-group input {
+  background: #FFFFFF;
+  border: 1px solid #C4C4C4;
+  border-radius: 10px;
+  height: 48px;
+  font-weight: 400;
+  font-size: 14px;
+  color: #242424;
+}
+div#Generate .modal-content .generate_model .generate_form form .field .form-group input:focus {
+  color: #495057;
+  background-color: #fff;
+  border-color: #C4C4C4;
+  outline: 0;
+  box-shadow: 0 0 0 0rem rgba(0, 123, 255, 0.25);
 }
 
 .tooltip {
@@ -537,7 +663,6 @@ section.multistep_sec .menu_link_section .content_box .form-card .summary_detail
   color: #1B1B1B;
 }
 section.multistep_sec .menu_link_section .content_box .form-card .summary_box {
-  background: #F9F9F9;
   padding: 25px;
 }
 section.multistep_sec .menu_link_section .content_box .form-card .summary_box .heading h3 {
@@ -557,6 +682,30 @@ section.multistep_sec .menu_link_section .content_box .form-card .summary_box .r
 }
 section.multistep_sec .menu_link_section .content_box .form-card .summary_box .recommended_box.mobile {
   display: none;
+}
+section.multistep_sec .menu_link_section .content_box .form-card .summary_box .recommended_box .pagination_box {
+  text-align: right;
+  margin-bottom: 10px;
+}
+section.multistep_sec .menu_link_section .content_box .form-card .summary_box .recommended_box .pagination_box .pagination {
+  display: inline-block;
+}
+section.multistep_sec .menu_link_section .content_box .form-card .summary_box .recommended_box .pagination_box .pagination a {
+  color: black;
+  float: left;
+  padding: 8px 16px;
+  text-decoration: none;
+  background: #F8F8F8;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  border-radius: 8px;
+  margin-left: 12px;
+}
+section.multistep_sec .menu_link_section .content_box .form-card .summary_box .recommended_box .pagination_box .pagination a.active {
+  background: #98272A;
+  border-radius: 8px;
+  color: white;
 }
 section.multistep_sec .menu_link_section .content_box .form-card .summary_box .recommended_box h4 {
   font-weight: 600;
@@ -670,11 +819,43 @@ section.multistep_sec .menu_link_section .content_box .form-card .summary_box .r
 section.multistep_sec .menu_link_section .content_box .form-card .summary_box .recommended_box .recommended_table .table tbody tr td .radio_btn input[type=radio]:checked + label::after {
   transform: translateY(-50%) scale(0.55);
 }
-section.multistep_sec .menu_link_section .content_box .form-card .summary_box .recommended_box .recommended_table .table tbody tr td .custom-control.custom-checkbox {
+section.multistep_sec .menu_link_section .content_box .form-card .summary_box .recommended_box .recommended_table .table tbody tr td .custom-checkbox {
   text-align: center;
 }
-section.multistep_sec .menu_link_section .content_box .form-card .summary_box .recommended_box .recommended_table .table tbody tr td .custom-control.custom-checkbox label.custom-control-label {
+section.multistep_sec .menu_link_section .content_box .form-card .summary_box .recommended_box .recommended_table .table tbody tr td .custom-checkbox input[type=checkbox] {
+  position: relative;
+  border: 1px solid #C4C4C4;
+  border-radius: 8px;
+  background: none;
   cursor: pointer;
+  line-height: 0;
+  margin: 0 0.6em 0 0;
+  outline: 0;
+  padding: 0 !important;
+  vertical-align: text-top;
+  height: 30px;
+  width: 30px;
+  -webkit-appearance: none;
+  opacity: 1;
+}
+section.multistep_sec .menu_link_section .content_box .form-card .summary_box .recommended_box .recommended_table .table tbody tr td .custom-checkbox input[type=checkbox]:checked {
+  background: #98272A;
+  border: 1px solid #98272A;
+  border-radius: 8px;
+  opacity: 1;
+}
+section.multistep_sec .menu_link_section .content_box .form-card .summary_box .recommended_box .recommended_table .table tbody tr td .custom-checkbox input[type=checkbox]:before {
+  content: "";
+  position: absolute;
+  right: 50%;
+  top: 50%;
+  width: 6px;
+  height: 14px;
+  border: solid #FFF;
+  border-width: 0 2px 2px 0;
+  margin: -2px -1px 0px -1px;
+  transform: rotate(45deg) translate(-50%, -50%);
+  z-index: 2;
 }
 section.multistep_sec .menu_link_section .content_box .form-card .summary_box .recommended_box .recommended_table .table tbody tr td a {
   font-weight: 400;
@@ -737,6 +918,24 @@ section.multistep_sec .menu_link_section .content_box .form-card .next_btn butto
   font-weight: 500;
   font-size: 16px;
   margin-top: 30px;
+}
+section.multistep_sec .menu_link_section .content_box .form-card .next_btn h5 {
+  margin: 0px;
+  padding: 12px 0px;
+  font-size: 16px;
+  font-weight: 800;
+}
+section.multistep_sec .menu_link_section .content_box .form-card .next_btn p.link_add {
+  margin: 0px;
+}
+section.multistep_sec .menu_link_section .content_box .form-card .next_btn p.link_add a {
+  color: #487CE2;
+  text-decoration: none;
+  border-bottom: 1px solid #487CE2;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19px;
+  cursor: pointer;
 }
 section.multistep_sec .menu_link_section .content_box .form-card .answer_summary {
   background: #F9F9F9;
@@ -935,12 +1134,21 @@ section.multistep_sec .menu_link_section .content_box .form-card form .cus_form 
   transform: rotate(45deg) translate(-50%, -50%);
   z-index: 2;
 }
+section.multistep_sec .menu_link_section .content_box .form-card form .cus_form .custom_filed.custom_basic .form-group {
+  position: relative;
+}
 section.multistep_sec .menu_link_section .content_box .form-card form .cus_form .custom_filed.custom_basic .form-group label {
   color: rgb(0, 0, 0);
   margin-bottom: 12px;
   font-weight: 600;
   font-size: 16px;
   line-height: 19px;
+}
+section.multistep_sec .menu_link_section .content_box .form-card form .cus_form .custom_filed.custom_basic .form-group .search_icon {
+  position: absolute;
+  right: 20px;
+  margin: -38px 0px;
+  cursor: pointer;
 }
 section.multistep_sec .menu_link_section .content_box .form-card form .cus_form .custom_filed.custom_basic .form-group input {
   height: 50px;
@@ -1237,6 +1445,44 @@ section.multistep_sec .menu_link_section .content_box .form-card form .cus_form 
     line-height: 20px;
     color: black;
   }
+  section.multistep_sec .menu_link_section .content_box .form-card .summary_box .recommended_box.mobile .recommended_mobile .recommended_card .top_rec .check_list input[type=checkbox] {
+    position: relative;
+    border: 1px solid #C4C4C4;
+    border-radius: 8px;
+    background: none;
+    cursor: pointer;
+    line-height: 0;
+    margin: 0 0em 0 0;
+    outline: 0;
+    padding: 0 !important;
+    vertical-align: text-top;
+    height: 24px;
+    width: 24px;
+    -webkit-appearance: none;
+    opacity: 1;
+  }
+  section.multistep_sec .menu_link_section .content_box .form-card .summary_box .recommended_box.mobile .recommended_mobile .recommended_card .top_rec .check_list input[type=checkbox]:checked {
+    background: #98272A;
+    border: 1px solid #98272A;
+    border-radius: 8px;
+    opacity: 1;
+  }
+  section.multistep_sec .menu_link_section .content_box .form-card .summary_box .recommended_box.mobile .recommended_mobile .recommended_card .top_rec .check_list input[type=checkbox]:before {
+    content: "";
+    position: absolute;
+    right: 50%;
+    top: 52%;
+    width: 6px;
+    height: 11px;
+    border: solid #FFF;
+    border-width: 0 2px 2px 0;
+    margin: -2px -1px 0px -1px;
+    transform: rotate(45deg) translate(-50%, -50%);
+    z-index: 2;
+  }
+  section.multistep_sec .menu_link_section .content_box .form-card .summary_box .recommended_box.mobile .recommended_mobile .recommended_card .top_rec .radio_btn .form-group {
+    margin-bottom: 4px;
+  }
   section.multistep_sec .menu_link_section .content_box .form-card .summary_box .recommended_box.mobile .recommended_mobile .recommended_card .top_rec .radio_btn input[type=radio] {
     display: none;
   }
@@ -1419,6 +1665,27 @@ section.multistep_sec .menu_link_section .content_box .form-card form .cus_form 
   }
   section.multistep_sec .menu_link_section .content_box .form-card form .cus_form .custom_filed.custom_basic .form-group ul li {
     width: 48%;
+  }
+}
+@media (max-width: 575.98px) {
+  div#confirm .modal-content .con_content {
+    padding: 12px;
+  }
+  div#confirm .modal-content .con_content img {
+    margin-bottom: 20px;
+    width: 45px;
+  }
+  div#confirm .modal-content .con_content h3 {
+    margin: 0px;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 28px;
+  }
+  div#confirm .modal-content .con_content p {
+    font-size: 15px;
+  }
+  div#confirm .modal-content .con_content .resend_btn button.latter {
+    margin-top: 15px;
   }
 }
 @media (max-width: 425.98px) {

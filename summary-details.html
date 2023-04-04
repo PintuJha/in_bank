@@ -131,18 +131,19 @@
                                     <div class="col-md-12">
                                         <div class="summary_details_box">
                                             <div class="top_box">
-                                               <div class="heading_box">
-                                                   <h4>Great!<br>
-                                                    Everything is ready.</h4>
-                                                    <p>Would you like to get the offer letter on you email or would<br> like to go back and change some details</p>
+                                                <div class="heading_box">
+                                                    <h4>Great!<br>
+                                                        Everything is ready.</h4>
+                                                    <p>Would you like to get the offer letter on you email or would<br>
+                                                        like to go back and change some details</p>
                                                 </div>
-                                               <div class="icon">
-                                                   <img src="assets/img/email.svg">
-                                               </div>
+                                                <div class="icon">
+                                                    <img src="assets/img/email.svg">
+                                                </div>
                                             </div>
 
                                             <div class="customer_details">
-                                                <form>
+                                                <!-- <form> -->
                                                 <div class="row">
                                                     <div class="col-md-12 mb-4">
                                                         <div class="customer_heading mb-2">
@@ -153,22 +154,25 @@
                                                     <div class="col-md-6 mb-4">
                                                         <div class="form-group">
                                                             <label for="usr">Customer Name</label>
-                                                            <input type="text" value="Infotech Pvt. Ltd." class="form-control" id="usr">
-                                                          </div>                                                          
+                                                            <input type="text" value="Infotech Pvt. Ltd."
+                                                                class="form-control" id="usr">
+                                                        </div>
                                                     </div>
 
                                                     <div class="col-md-6 mb-4">
                                                         <div class="form-group">
                                                             <label for="usr">Contact No.</label>
-                                                            <input type="text" value="+91 90000 12121" class="form-control" id="usr">
-                                                          </div>                                                          
+                                                            <input type="text" value="+91 90000 12121"
+                                                                class="form-control" id="usr">
+                                                        </div>
                                                     </div>
 
                                                     <div class="col-md-12 mb-4">
                                                         <div class="form-group">
                                                             <label for="usr">Customer Name</label>
-                                                            <textarea class="form-control"  id="comment">390, B wing corporate Building, sector-6 Andheri west- Mumbai</textarea>
-                                                          </div>                                                          
+                                                            <textarea class="form-control"
+                                                                id="comment">390, B wing corporate Building, sector-6 Andheri west- Mumbai</textarea>
+                                                        </div>
                                                     </div>
 
 
@@ -182,32 +186,36 @@
                                                     <div class="col-md-6 mb-4">
                                                         <div class="form-group">
                                                             <label for="usr">RM Name</label>
-                                                            <input type="text" value="Ranjeet Singh Rathore" class="form-control" id="usr">
-                                                          </div>                                                          
+                                                            <input type="text" value="Ranjeet Singh Rathore"
+                                                                class="form-control" id="usr">
+                                                        </div>
                                                     </div>
 
                                                     <div class="col-md-6 mb-4">
                                                         <div class="form-group">
                                                             <label for="usr">Contact No.</label>
-                                                            <input type="text" value="+91 90000 12121" class="form-control" id="usr">
-                                                          </div>                                                          
+                                                            <input type="text" value="+91 90000 12121"
+                                                                class="form-control" id="usr">
+                                                        </div>
                                                     </div>
 
                                                     <div class="col-md-12 mb-4">
                                                         <div class="form-group">
                                                             <label for="usr">Email Address</label>
-                                                            <input type="email" value="ranjeet_rathore@indusind.com" class="form-control" id="usr">
-                                                          </div>                                                          
+                                                            <input type="email" value="ranjeet_rathore@indusind.com"
+                                                                class="form-control" id="usr">
+                                                        </div>
                                                     </div>
 
                                                     <div class="col-md-12 mt-3">
                                                         <div class="confirm_btn">
                                                             <button class="no confirm">No</button>
-                                                            <button class="confirm">Confirm</button>
+                                                            <button class="confirm" data-toggle="modal"
+                                                                data-target="#confirm">Confirm</button>
                                                         </div>
                                                     </div>
                                                 </div>
-                                            </form>
+                                                <!-- </form> -->
                                             </div>
 
                                         </div>
@@ -222,6 +230,31 @@
     </section>
 
 
+
+
+    <div class="modal fade" id="confirm">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="confirm">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <div class="con_content">
+                        <img src="assets/img/check1.svg">
+                       <h3>Offer letter sent Successfully!!</h3>
+                       <p>The offer letter has been sent to your official email id<br>
+                        inxxxxxxxxx@abc.com</p>
+                        <div class="resend_btn">
+                            <button class="latter">Resend Offer Letter</button>
+                        </div>
+                    </div>
+                </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
     <script src="assets/js/jquery.slim.min.js"></script>
     <script src="assets/js/popper.min.js"></script>
     <script src="assets/js/bootstrap.bundle.min.js"></script>
@@ -229,4 +262,5 @@
     <script src="assets/js/custom.js"></script>
 
 </body>
+
 </html>

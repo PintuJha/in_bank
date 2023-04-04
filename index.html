@@ -8,93 +8,109 @@
     <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
     <link rel="stylesheet" href="assets/css/style.css" />
 </head>
+
 <body>
-<header>
-    <nav class="navbar navbar-expand-lg">
-        <a href="javascript:void(0);" class="navbar-brand">
-            <img src="assets/img/logo.svg">
-        </a>
-        <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
-            <span class="navbar-toggler-icon"><i class="fa-solid fa-bars"></i></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarCollapse">
-            <ul class="navbar-nav ml-auto">
-                <li clas="navbar-item">
-                    <a href="javascript:void(0);" class="nav-link">Home</a>
-                </li>
-                <li clas="navbar-item">
-                    <a href="javascript:void(0);" class="nav-link">Terms & Conditions</a>
-                </li>
-                <li clas="navbar-item">
-                    <a href="javascript:void(0);" class="nav-link">Privacy Policy</a>
-                </li>
-                <li clas="navbar-item">
-                    <a href="javascript:void(0);" class="nav-link">Contact Us</a>
-                </li>
-            </ul>
-        </div>
-    </nav>
-</header>
+    <header>
+        <nav class="navbar navbar-expand-lg">
+            <a href="javascript:void(0);" class="navbar-brand">
+                <img src="assets/img/logo.svg">
+            </a>
+            <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"><i class="fa-solid fa-bars"></i></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav ml-auto">
+                    <li clas="navbar-item">
+                        <a href="javascript:void(0);" class="nav-link">Home</a>
+                    </li>
+                    <li clas="navbar-item">
+                        <a href="javascript:void(0);" class="nav-link">Terms & Conditions</a>
+                    </li>
+                    <li clas="navbar-item">
+                        <a href="javascript:void(0);" class="nav-link">Privacy Policy</a>
+                    </li>
+                    <li clas="navbar-item">
+                        <a href="javascript:void(0);" class="nav-link">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
 
-<section>
-    <div class="sale_assist_sec">
-        <div class="login_field">
-            <div>
-                <div class="form_box">
-                    <!-- <form> -->
-                        <div class="container-fluid">
-                            <div class="heading">
-                                <p>Indus <span>Self Sales Assist</span> Login</p>
-                                   <h3>Welcome Back!!</h3>
-                            </div>
-                            <div class="row">
-                             
-                                <div class="col-md-12 mb-4">
-                                    <div class="custom_filed">
-                                        <div class="form-group">
-                                            <label for="Name">Employee Id</label>
-                                            <input type="text" class="form-control" placeholder="Enter Employee Id" id="Name">
+    <section>
+        <div class="sale_assist_sec">
+            <div class="login_field">
+                <div>
+                    <div class="form_box">
+                        <form id="form" class="form">
+                            <div class="container-fluid">
+                                <div class="heading">
+                                    <p>Indus <span>Self Sales Assist</span> Login</p>
+                                    <h3>Welcome Back!!</h3>
+                                </div>
+                                <div class="row">
+
+                                    <div class="col-md-12 mb-4">
+                                        <div class="custom_filed">
+                                            <div class="form-group">
+                                                <label for="employee_id">Employee Id</label>
+                                                <input type="text" class="form-control" placeholder="Enter Employee Id"
+                                                    id="employee_id">
+                                                <small>Error Message</small>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
 
-                                <div class="col-md-12 mb-4">
-                                    <div class="custom_filed">
-                                        <div class="form-group">
-                                            <label for="code">Password</label>
-                                            <input type="password" class="form-control" placeholder="Enter Password" id="code">
+                                    <div class="col-md-12 mb-4">
+                                        <div class="custom_filed">
+                                            <div class="form-group">
+                                                <label for="password">Password</label>
+                                                <input type="password" class="form-control" placeholder="Enter Password"
+                                                    id="password">
+                                                    <small>Error Message</small>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
 
-                                <div class="col-md-12 mt-2">
-                                    <div class="custom_filed_process">
-                                        <button class="process" onclick="location.href = 'customer-segment.html';">Click to Proceed</button>
+                                    <div class="col-md-12 mt-2">
+                                        <div class="row">
+                                            <div class="col-md-12 col-lg-6">
+                                                <div class="custom_filed_process">
+                                                    <button onclick="location.href = 'customer-search.html';" class="process w-100 reset">Reset</button>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-12 col-lg-6">
+                                                <div class="custom_filed_process">
+                                                    <button type="submit" class="process w-100"
+                                                        >Click to
+                                                        Proceed</button>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
+
                                 </div>
-                                
                             </div>
-                        </div>
-                    <!-- </form> -->
+                        </form>
+                    </div>
                 </div>
             </div>
-        </div>
 
-        <div class="login_img_sec">
-            <div class="login_icon">
-                <img src="assets/img/banking.svg">
-                <div class="finance_heading">
-                    <h3>Get control of all your finance needs<br>
-                        anywhere, anytime.</h3>
-                    <div class="app_banking">
-                        <p>For IndusInd Banking App</p>
-                        <img src="assets/img/store_logo.svg">
+            <div class="login_img_sec">
+                <div class="login_icon">
+                    <img src="assets/img/banking.svg">
+                    <div class="finance_heading">
+                        <h3>Get control of all your finance needs<br>
+                            anywhere, anytime.</h3>
+                        <div class="app_banking">
+                            <p>For IndusInd Banking App</p>
+                            <img src="assets/img/store_logo.svg">
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
 
     <script src="assets/js/jquery.slim.min.js"></script>
@@ -102,6 +118,64 @@
     <script src="assets/js/bootstrap.bundle.min.js"></script>
     <script src="assets/js/fontawesome.js"></script>
     <script src="assets/js/custom.js"></script>
+
+    <script>
+        const form = document.getElementById('form');
+        const username = document.getElementById('employee_id');
+        const password = document.getElementById('password');
+ 
+        //Show input error messages
+        function showError(input, message) {
+            const formControl = input.parentElement;
+            formControl.className = 'form-group error';
+            const small = formControl.querySelector('small');
+            small.innerText = message;
+        }
+
+        //show success colour
+        function showSucces(input) {
+            const formControl = input.parentElement;
+            formControl.className = 'form-group success';
+        }
+
+        //checkRequired fields
+        function checkRequired(inputArr) {
+            inputArr.forEach(function (input) {
+                if (input.value.trim() === '') {
+                    showError(input, `Enter valid ${getFieldName(input)}`)
+                } else {
+                    showSucces(input);
+                }
+            });
+        }
+
+
+      
+        //get FieldName not used
+        function getFieldName(input) {
+            return input.id.charAt(0).toUpperCase() + input.id.slice(1);
+        }
+
+     
+//         function checkLength(input, min ,max) {
+//     if(input.value.length < min) {
+//         showError(input, `${getFieldName(input)} must be at least ${min} characters`);
+//     }else if(input.value.length > max) {
+//         showError(input, `${getFieldName(input)} must be les than ${max} characters`);
+//     }else {
+//         showSucces(input);
+//     }
+// }
+
+        //Event Listeners
+        form.addEventListener('submit', function (e) {
+            e.preventDefault();
+
+            checkRequired([username, password]);
+            // checkLength(username, 3, 15);
+            // checkLength(password,6,25);
+        });
+    </script>
 </body>
 
 </html>
