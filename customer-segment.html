@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="assets/css/style.css" />
     <style>
         .content_box {
-            padding-top: 70px;
+            padding-top: 40px;
         }
     </style>
 </head>
@@ -46,13 +46,11 @@
     <section class="multistep_sec">
         <div class="container-fluid">
             <div class="row">
-
                 <div class="col-md-12">
                     <div class="back">
                         <p><a href="customer-search1.html"><img src="assets/img/left_arrow.svg"> Back</a></p>
                     </div>
                 </div>
-
                 <div class="col-md-12">
                     <div class="menu_link_section">
                         <div class="link">
@@ -60,79 +58,74 @@
                                 <li class="active">
                                     <a href="javascript:void(0);">
                                         <img src="assets/img/customer_information.svg">
-                                        Customer <br> Information
+                                        <span>Customer <br> Information</span>
+                                        <div class="count_pro">
+                                            <p>1</p>
+                                            <img src="assets/img/ckeck.svg">
+                                        </div>
+                            
                                     </a>
                                 </li>
                                 <li class="">
                                     <a href="javascript:void(0);">
                                         <img src="assets/img/basic.svg">
-                                        Basic Q & A
+                                        <span>Basic Q & A</span>
+                                        <div class="count_pro">
+                                            <p>2</p>
+                                            <img src="assets/img/ckeck.svg">
+                                        </div>
                                     </a>
                                 </li>
                                 <li class="">
                                     <a href="javascript:void(0);">
                                         <img src="assets/img/collection.svg">
-                                        Collection Q & A
+                                        <span>Collection Q & A</span>
+                                        <div class="count_pro">
+                                            <p>3</p>
+                                            <img src="assets/img/ckeck.svg">
+                                        </div>
+                            
                                     </a>
                                 </li>
                                 <li class="">
                                     <a href="javascript:void(0);">
                                         <img src="assets/img/payment.svg">
-                                        Payments Q & A
+                                        <span>Payments Q & A</span>
+                                        <div class="count_pro">
+                                            <p>4</p>
+                                            <img src="assets/img/ckeck.svg">
+                                        </div>
                                     </a>
                                 </li>
                                 <li class="">
                                     <a href="javascript:void(0);">
                                         <img src="assets/img/summary.svg">
-                                        Summary Page
+                                        <span>Summary Page</span>
+                                        <div class="count_pro">
+                                            <p>5</p>
+                                            <img src="assets/img/ckeck.svg">
+                                        </div>
                                     </a>
                                 </li>
-
                             </ul>
-
                             <div class="progress-container">
                                 <div class="progress" id="progress"></div>
-                                <div class="circle">
-                                    <div class="count_pro">
-                                        <p>1</p>
-                                        <img src="assets/img/ckeck.svg">
-                                    </div>
-                                </div>
-                                <div class="circle">
-                                    <div class="count_pro">
-                                        <p>2</p>
-                                        <img src="assets/img/ckeck.svg">
-                                    </div>
-                                </div>
-                                <div class="circle">
-                                    <div class="count_pro">
-                                        <p>3</p>
-                                        <img src="assets/img/ckeck.svg">
-                                    </div>
-                                </div>
-                                <div class="circle"> <div class="count_pro">
-                                    <p>4</p>
-                                    <img src="assets/img/ckeck.svg">
-                                </div></div>
-                                <div class="circle"> <div class="count_pro">
-                                    <p>5</p>
-                                    <img src="assets/img/ckeck.svg">
-                                </div></div>
                             </div>
                         </div>
 
                         <div class="content_box">
                             <div class="form-card">
-                                <div class="row">
+                                <div class="row align-items-center">
                                     <div class="col-md-4">
                                         <div class="cus_img">
-                                            <img src="assets/img/user.png">
+                                            <img src="assets/img/user.png" class="w-100">
                                         </div>
                                     </div>
                                     <div class="col-md-8">
-                                        <form action="">
+                                        <form action="customer-information.html" class="segment_radio">
                                             <div class="cus_form">
                                                 <div class="custom_filed custom_basic">
+                                                   
                                                     <div class="form-group">
                                                         <label for="Id" class="basic">Select the Customer
                                                             Segment</label>
@@ -165,21 +158,18 @@
                                                             </li>
                                                         </ul>
                                                     </div>
+
+                                                    <div class="next_btn mt-4 text-center">
+                                                        <button name="next" class="custom mt-4"
+                                                            onclick="location.href = 'customer-information.html';">Next</button>
+                                                    </div>
+
                                                 </div>
                                             </div>
                                         </form>
                                     </div>
-
-                                    <div class="col-md-12 mt-4 text-center">
-                                        <div class="next_btn">
-                                            <button name="next" class="custom"
-                                                onclick="location.href = 'customer-information.html';">Next</button>
-                                        </div>
-                                    </div>
                                 </div>
                             </div>
-
-
                         </div>
                     </div>
                 </div>
@@ -193,6 +183,6 @@
     <script src="assets/js/bootstrap.bundle.min.js"></script>
     <script src="assets/js/fontawesome.js"></script>
     <script src="assets/js/custom.js"></script>
-</body>
 
+</body>
 </html>
