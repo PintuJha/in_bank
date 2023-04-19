@@ -61,6 +61,19 @@ div#confirm {
             }
 
             .resend_btn {
+
+                button.offer_close {
+                    background: #FFFFFF;
+                    border: 1px solid #98272A;
+                    border-radius: 12px;
+                    font-weight: 600;
+                    font-size: 16px;
+                    line-height: 19px;
+                    color: #1B1B1B;
+                    padding: 12px 25px;
+                    margin-right: 10px;
+                }
+                
                 button.latter {
                     border: 0px;
                     background: #98272A;
@@ -310,6 +323,32 @@ body {
 
 section.multistep_sec {
     padding: 15px 25px;
+  
+        .disclaimer_sec {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-top: 25px;
+            p {
+                margin: 0px;
+                font-size: 14px;
+                line-height: 24px;
+                color: #FF5A43;
+                font-weight: 500;
+            }
+            button.custom_back {
+                background: #FFFFFF;
+                border: 1px solid #97262A;
+                border-radius: 12px;
+                font-weight: 600;
+                font-size: 16px;
+                line-height: 20px;
+                color: #231F20;
+                padding: 12px 34px;
+            }
+        }
+   
+
 
     .back {
         p {
@@ -700,6 +739,18 @@ section.multistep_sec {
                             .submit_btn {
                                 text-align: center;
 
+
+                                button.back_summary {
+                                    background: #FFFFFF;
+                                    border: 1px solid #97262A;
+                                    border-radius: 12px;
+                                    font-weight: 600;
+                                    font-size: 16px;
+                                    line-height: 19px;
+                                    padding: 12px 35px;
+                                    margin-right: 10px;
+                                }
+
                                 button.submit {
                                     border: none;
                                     background: #98272A;
@@ -735,6 +786,7 @@ section.multistep_sec {
                                             font-size: 15px;
                                             line-height: 26px;
                                             padding-left: 25px;
+                                            vertical-align: middle;
 
                                             &:first-child {
                                                 border-radius: 12px 0px 0px 0px;
@@ -908,13 +960,16 @@ section.multistep_sec {
                     button.custom {
                         background: #FFFFFF;
                         border: 1px solid #98272A;
-                        border-radius: 12px;
+                        border-radius: 6px;
                         color: #1B1B1B;
                         padding: 7px 18px;
                         font-weight: 600;
                         font-size: 16px;
                         line-height: 19px;
-
+                        img.back {
+                            margin-left: 0px;
+                            margin-right: 5px;
+                        }
                         img {
                             margin-left: 5px;
                             width: 22px;
@@ -923,12 +978,26 @@ section.multistep_sec {
                 }
 
                 .next_btn {
+                   
                     button.custom_back {
                         color: #231F20;
                         background: #FFFFFF;
                         border: 1px solid #97262A;
                         border-radius: 12px;
                         margin-right: 15px;
+                    }
+
+                    a.back {
+                        background: #FFFFFF;
+                        border: 1px solid #97262A;
+                        border-radius: 12px;
+                        font-weight: 600;
+                        font-size: 16px;
+                        line-height: 19px;
+                        color: #1B1B1B;
+                        padding: 17px 30px;
+                        margin-right: 15px;
+                        text-decoration: none;
                     }
 
                     button {
@@ -941,6 +1010,19 @@ section.multistep_sec {
                         font-weight: 500;
                         font-size: 16px;
                         margin-top: 30px;
+                    }
+
+
+                    p.skip {
+                        margin: 0px;
+                        margin-top: 22px;
+                        a {
+                            text-decoration: underline;
+                            font-weight: 600;
+                            font-size: 16px;
+                            line-height: 19px;
+                            color: #1B1B1B;
+                        }
                     }
 
                     h5 {
@@ -1413,7 +1495,7 @@ section.multistep_sec {
                 .form-card {
                     .next_btn h5 {
                         margin: 0px;
-                        padding: 8px 0px;
+                        padding: 2px 0px 2px;
                     }
 
                     .summary_box {
@@ -1584,19 +1666,22 @@ section.multistep_sec {
 
     section.multistep_sec .menu_link_section .content_box .form-card form.segment_radio .cus_form .custom_filed.custom_basic {
         width: 100%;
-        .form-group{
-            ul{
+
+        .form-group {
+            ul {
                 gap: 14px;
             }
         }
     }
 
-    section.multistep_sec .menu_link_section .content_box .form-card form .cus_form.basic_question_box .custom_filed.custom_basic .form-group label{
+    section.multistep_sec .menu_link_section .content_box .form-card form .cus_form.basic_question_box .custom_filed.custom_basic .form-group label {
         font-size: 18px;
-        br{
+
+        br {
             display: none;
         }
     }
+
     .tooltip {
         .tooltiptext {
             left: inherit;
@@ -1644,30 +1729,37 @@ section.multistep_sec {
         padding-inline-start: 0px;
     }
 
-    section.multistep_sec.customer_search_list .menu_link_section .content_box .form-card .summary_box .recommended_table{
+    section.multistep_sec.customer_search_list .menu_link_section .content_box .form-card .summary_box .recommended_table {
         display: block;
         overflow: auto;
     }
+
     section.multistep_sec.customer_search_list {
         padding: 5px 0px;
     }
+
     section.multistep_sec .menu_link_section .link ul li a .count_pro.active {
         background: #32D055;
         color: white;
         display: none;
     }
+
     section .sale_assist_sec .form_box {
         width: 100%;
     }
+
     section.multistep_sec .menu_link_section .content_box .form-card form.cus_search .cus_form .custom_filed.custom_basic {
         width: 100%;
     }
+
     section.multistep_sec .menu_link_section .content_box .form-card form.cus_search {
         padding-inline-start: 0px;
     }
-    section.multistep_sec .menu_link_section .link ul li a .count_pro{
+
+    section.multistep_sec .menu_link_section .link ul li a .count_pro {
         display: none;
     }
+
     .tooltip {
         .tooltiptext {
             ul {
@@ -2142,7 +2234,7 @@ section.multistep_sec {
                                         gap: 12px 10px;
 
                                         li {
-                                              width: 47.5%;
+                                            width: 47.5%;
                                         }
                                     }
                                 }

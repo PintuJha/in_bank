@@ -47,11 +47,11 @@
         <div class="container-fluid">
             <div class="row">
 
-                <div class="col-md-12">
+                <!-- <div class="col-md-12">
                     <div class="back">
                         <p><a href="summary.html"><img src="assets/img/left_arrow.svg"> Back</a></p>
                     </div>
-                </div>
+                </div> -->
 
                 <div class="col-md-12">
                     <div class="menu_link_section">
@@ -200,7 +200,12 @@
 
                                                     <div class="col-md-12 mt-3">
                                                         <div class="confirm_btn">
-                                                            <button class="no confirm">No</button>
+
+                                                            <button class="no confirm"
+                                                            onclick="location.href = 'summary1.html';">Cancle</button>
+
+
+                                                          
                                                             <button class="confirm" data-toggle="modal"
                                                                 data-target="#confirm">Confirm</button>
                                                         </div>
@@ -228,13 +233,16 @@
             <div class="modal-content">
                 <div class="modal-body">
                     <div class="confirm">
-                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <!-- <button type="button" class="close" data-dismiss="modal">&times;</button> -->
                     <div class="con_content">
                         <img src="assets/img/check1.svg">
                        <h3>Offer letter sent Successfully!!</h3>
                        <p>The offer letter has been sent to your official email id<br>
                         inxxxxxxxxx@abc.com</p>
                         <div class="resend_btn">
+
+                            <button type="button" class="offer_close" data-dismiss="modal">Close</button>
+
                             <button class="latter">Resend Offer Letter</button>
                         </div>
                     </div>

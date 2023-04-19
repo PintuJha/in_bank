@@ -10,6 +10,7 @@
 </head>
 
 <body>
+    
     <header>
         <nav class="navbar navbar-expand-lg">
             <a href="javascript:void(0);" class="navbar-brand">
@@ -67,7 +68,7 @@
                                                 <label for="password">Password</label>
                                                 <input type="password" class="form-control" placeholder="Enter Password"
                                                     id="password">
-                                                    <small>Error Message</small>
+                                                <small>Error Message</small>
                                             </div>
                                         </div>
                                     </div>
@@ -76,13 +77,13 @@
                                         <div class="row">
                                             <div class="col-md-12 col-lg-6">
                                                 <div class="custom_filed_process">
-                                                    <button onclick="location.href = 'customer-search.html';" class="process w-100 reset">Reset</button>
+                                                    <button onclick="location.href = 'customer-search.html';"
+                                                        class="process w-100 reset">Reset</button>
                                                 </div>
                                             </div>
                                             <div class="col-md-12 col-lg-6">
                                                 <div class="custom_filed_process">
-                                                    <button type="submit" class="process w-100"
-                                                        >Click to
+                                                    <button type="submit" class="process w-100">Click to
                                                         Proceed</button>
                                                 </div>
                                             </div>
@@ -123,7 +124,6 @@
         const form = document.getElementById('form');
         const username = document.getElementById('employee_id');
         const password = document.getElementById('password');
- 
         //Show input error messages
         function showError(input, message) {
             const formControl = input.parentElement;
@@ -131,13 +131,11 @@
             const small = formControl.querySelector('small');
             small.innerText = message;
         }
-
         //show success colour
         function showSucces(input) {
             const formControl = input.parentElement;
             formControl.className = 'form-group success';
         }
-
         //checkRequired fields
         function checkRequired(inputArr) {
             inputArr.forEach(function (input) {
@@ -148,34 +146,29 @@
                 }
             });
         }
-
-
-      
         //get FieldName not used
         function getFieldName(input) {
             return input.id.charAt(0).toUpperCase() + input.id.slice(1);
         }
-
-     
-//         function checkLength(input, min ,max) {
-//     if(input.value.length < min) {
-//         showError(input, `${getFieldName(input)} must be at least ${min} characters`);
-//     }else if(input.value.length > max) {
-//         showError(input, `${getFieldName(input)} must be les than ${max} characters`);
-//     }else {
-//         showSucces(input);
-//     }
-// }
-
+        //         function checkLength(input, min ,max) {
+        //     if(input.value.length < min) {
+        //         showError(input, `${getFieldName(input)} must be at least ${min} characters`);
+        //     }else if(input.value.length > max) {
+        //         showError(input, `${getFieldName(input)} must be les than ${max} characters`);
+        //     }else {
+        //         showSucces(input);
+        //     }
+        // }
         //Event Listeners
         form.addEventListener('submit', function (e) {
             e.preventDefault();
-
             checkRequired([username, password]);
             // checkLength(username, 3, 15);
             // checkLength(password,6,25);
         });
     </script>
+
+
 </body>
 
 </html>
