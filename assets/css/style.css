@@ -468,15 +468,17 @@ section.multistep_sec {
 section.multistep_sec .disclaimer_sec {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  margin-top: 25px;
+  justify-content: space-evenly;
+  width: 80%;
+  margin: 25px auto 0px;
 }
 section.multistep_sec .disclaimer_sec p {
   margin: 0px;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 24px;
   color: #FF5A43;
-  font-weight: 500;
+  font-weight: 600;
+  width: 60%;
 }
 section.multistep_sec .disclaimer_sec button.custom_back {
   background: #FFFFFF;
@@ -1393,7 +1395,7 @@ section.multistep_sec .menu_link_section .content_box .form-card form .cus_form 
   }
   section.multistep_sec.customer_search_list .menu_link_section .content_box .form-card .next_btn h5 {
     margin: 0px;
-    padding: 2px 0px 2px;
+    padding: 4px 0px 0px;
   }
   section.multistep_sec.customer_search_list .menu_link_section .content_box .form-card .summary_box h4 {
     margin-bottom: 8px;
