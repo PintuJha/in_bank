@@ -21,6 +21,10 @@
     padding: 0px;
 }
 
+.back_arrow {
+    display: none;
+}
+
 div#confirm {
     .modal-content {
         background: #FFFFFF;
@@ -655,13 +659,15 @@ section.multistep_sec {
                                 line-height: 20px;
                                 color: #1B1B1B;
                                 a {
-                                    text-decoration: none;
+                                    text-decoration: underline;
                                 }
                             }
                         }
                     }
                 }
-
+                .summary_box.mobile{
+                    display: none;
+                }
                 .summary_box {
                     // background: #F9F9F9;
                     padding: 25px;
@@ -1685,6 +1691,13 @@ section.multistep_sec {
 }
 
 @media (max-width: 1199.98px) {
+
+    section.multistep_sec .menu_link_section .content_box .form-card form.information .cus_form .custom_filed.custom_basic {
+        width: 60%;
+        margin: 0px auto;
+    }
+
+
     section.multistep_sec {
         .menu_link_section {
 
@@ -1709,7 +1722,7 @@ section.multistep_sec {
 
 @media (max-width: 991.98px) {
     section.multistep_sec .menu_link_section .content_box .form-card form.information .cus_form .custom_filed.custom_basic {
-        width: 60%;
+        width: 70%;
     }
 
     section.multistep_sec .menu_link_section .content_box .form-card form.segment_radio .cus_form .custom_filed.custom_basic {
@@ -1765,6 +1778,90 @@ section.multistep_sec {
 
 
 @media (max-width: 767.98px) {
+
+
+    section.multistep_sec .menu_link_section .content_box .form-card .summary_box .recommended_box .process_text {
+        width: 100%;
+        position: fixed;
+        left: 0px;
+        right: 0px;
+        bottom: 0px;
+        padding: 10px 10px 12px;
+        background: white;
+        margin: 0px auto;
+        z-index: 99;
+    }
+    section.multistep_sec .menu_link_section .content_box .form-card .summary_box .recommended_box .pagination_box {
+        text-align: center;
+        margin-bottom: 0px;
+    }
+
+    section.multistep_sec .menu_link_section .link ul li a span br{
+        display: none;
+    }
+    div#Generate .modal-content .generate_model .generate_form {
+        width: 100%;
+        margin: 32px auto 0px;
+    }
+    section.multistep_sec .menu_link_section .content_box .form-card .next_btn p.link_add a {
+        font-size: 14px;
+    }
+
+
+.web_view_search{
+    display: none;
+}
+    .back_arrow {
+        display: block;
+        p{
+            margin: 0px;
+            margin-top: 12px;
+            a {
+                color: black;
+                font-weight: 600;
+                font-size: 16px;
+                line-height: 19px;
+                text-decoration: none;
+                img.back {
+                    margin-right: 5px;
+                }
+            }
+        }
+    }
+
+
+    .next_btn {
+        position: fixed;
+        left: 0px;
+        right: 0px;
+        bottom: 0px;
+        background: white;
+        padding: 12px 0px 24px;
+        z-index: 99;
+    }
+    section.multistep_sec{
+        .disclaimer_sec {
+            display: block;
+            width: 100%;
+            margin: 20px auto 0px;
+            p {
+                margin: 0px;
+                font-size: 15px;
+                line-height: 24px;
+                color: #FF5A43;
+                font-weight: 600;
+                width: 100%;
+                margin-bottom: 16px;
+            }
+            .skip {
+                text-align: right;
+            }
+        }
+    }
+
+
+
+
     section.multistep_sec .menu_link_section .content_box .form-card .answer_summary {
         margin-inline-start: 0px;
     }
@@ -1888,17 +1985,190 @@ section.multistep_sec {
                 padding-top: 20px;
 
                 .form-card {
+                    .summary_box.mobile{
+                        display: block;
+                        padding: 0px;
+                        h4 {
+                            font-weight: 600;
+                            font-size: 16px;
+                            line-height: 20px;
+                            color: #000000;
+                          }
+                          .recommended_mobile{
+                            .recommended_card {
+                                background: #FFFFFF;
+                                box-shadow: 0px 0px 6px #DEDEDE;
+                                border-radius: 12px;
+                                padding: 15px;
+
+
+                                .rec_content {
+                                    display: flex;
+                                    flex-wrap: wrap;
+                                    gap: 16px;
+                                    .reco_list {
+                                        width: 47%;
+                                        p {
+                                            margin: 0px;
+                                          }
+
+                                          .bold {
+                                            font-weight: 600;
+                                            font-size: 14px;
+                                            margin-top: 3px !important;
+                                          }
+                                      }
+                                  }
+
+                            
+                                .top_rec {
+                                    display: flex;
+                                    align-items: flex-start;
+                                    justify-content: space-between;
+                                    margin-bottom: 15px;
+
+                                    .text_list {
+                                        display: flex;
+                                        align-items: center;
+
+                                        .icon {
+                                            margin-right: 12px;
+
+                                            img {
+                                                width: 50px;
+                                            }
+                                        }
+
+                                        .text {
+                                            p {
+                                                margin: 0px;
+                                                font-weight: 600;
+                                                font-size: 13px;
+                                                line-height: 20px;
+                                                color: black;
+                                            }
+                                        }
+                                    }
+
+                                    .check_list {
+                                        input[type=checkbox] {
+                                            position: relative;
+                                            border: 1px solid #C4C4C4;
+                                            border-radius: 8px;
+                                            background: none;
+                                            cursor: pointer;
+                                            line-height: 0;
+                                            margin: 0 0em 0 0;
+                                            outline: 0;
+                                            padding: 0 !important;
+                                            vertical-align: text-top;
+                                            height: 24px;
+                                            width: 24px;
+                                            -webkit-appearance: none;
+                                            opacity: 1;
+                                        }
+
+
+
+                                        input[type=checkbox]:checked {
+                                            background: #98272A;
+                                            border: 1px solid #98272A;
+                                            border-radius: 8px;
+                                            opacity: 1;
+                                        }
+
+                                        input[type=checkbox]:before {
+                                            content: "";
+                                            position: absolute;
+                                            right: 50%;
+                                            top: 52%;
+                                            width: 6px;
+                                            height: 11px;
+                                            border: solid #FFF;
+                                            border-width: 0 2px 2px 0;
+                                            margin: -2px -1px 0px -1px;
+                                            transform: rotate(45deg) translate(-50%, -50%);
+                                            z-index: 2;
+                                        }
+                                    }
+
+                                    .radio_btn {
+                                        .form-group {
+                                            margin-bottom: 4px;
+                                        }
+
+                                        input[type="radio"] {
+                                            display: none;
+                                        }
+
+                                        label {
+                                            cursor: pointer;
+                                            position: relative;
+                                            cursor: pointer;
+                                            position: relative;
+                                            margin: 0px;
+                                            font-weight: 600;
+                                            font-size: 14px;
+                                            line-height: 16px;
+                                            margin: 0px;
+
+                                        }
+
+                                        label::before {
+                                            content: "";
+                                            position: absolute;
+                                            width: 22px;
+                                            height: 22px;
+                                            background-color: #e3dddd1a;
+                                            border-radius: 50%;
+                                            border: 1px solid #D9D9D9;
+                                            top: 50%;
+                                            left: -30px;
+                                            transform: translateY(-50%);
+                                            transition: border-color 400ms ease;
+                                        }
+
+                                        label::after {
+                                            content: "";
+                                            position: absolute;
+                                            width: 22px;
+                                            height: 22px;
+                                            background-color: #98272A;
+                                            border: 2px solid #98272A;
+                                            border-radius: 50%;
+                                            top: 50%;
+                                            left: -30px;
+                                            transform: translateY(-50%) scale(0);
+                                            transition: transform 400ms ease;
+                                        }
+
+                                        input[type="radio"]:checked+label::before {
+                                            border-color: #98272A;
+                                        }
+
+                                        input[type="radio"]:checked+label::after {
+                                            transform: translateY(-50%) scale(0.55);
+                                        }
+
+                                    }
+
+                                }
+                            }
+                          }
+
+
+                    }
                     .summary_box {
-                        padding: 15px;
+                        padding: 0px;
 
                         .heading {
                             h3 {
                                 font-weight: 600;
                                 font-size: 20px;
                                 line-height: 26px;
-                                text-align: center;
+                                text-align: left;
                                 color: #231F20;
-                                margin-bottom: 20px;
+                                margin-bottom: 10px;
                             }
 
                             p {
@@ -1928,6 +2198,74 @@ section.multistep_sec {
                                     padding: 15px;
 
                                     .rec_content {
+
+                                        .radio_btn {
+                                            .radio-buttons{
+                                                display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 48px;
+    margin-top: 12px;
+                                           
+                                            .form-group {
+                                                margin-bottom: 4px;
+                                            }
+
+                                            input[type="radio"] {
+                                                display: none;
+                                            }
+
+                                            label {
+                                                cursor: pointer;
+                                                position: relative;
+                                                cursor: pointer;
+                                                position: relative;
+                                                margin: 0px;
+                                                font-weight: 600;
+                                                font-size: 14px;
+                                                line-height: 16px;
+                                                margin: 0px;
+
+                                            }
+
+                                            label::before {
+                                                content: "";
+                                                position: absolute;
+                                                width: 22px;
+                                                height: 22px;
+                                                background-color: #e3dddd1a;
+                                                border-radius: 50%;
+                                                border: 1px solid #D9D9D9;
+                                                top: 50%;
+                                                left: -30px;
+                                                transform: translateY(-50%);
+                                                transition: border-color 400ms ease;
+                                            }
+
+                                            label::after {
+                                                content: "";
+                                                position: absolute;
+                                                width: 22px;
+                                                height: 22px;
+                                                background-color: #98272A;
+                                                border: 2px solid #98272A;
+                                                border-radius: 50%;
+                                                top: 50%;
+                                                left: -30px;
+                                                transform: translateY(-50%) scale(0);
+                                                transition: transform 400ms ease;
+                                            }
+
+                                            input[type="radio"]:checked+label::before {
+                                                border-color: #98272A;
+                                            }
+
+                                            input[type="radio"]:checked+label::after {
+                                                transform: translateY(-50%) scale(0.55);
+                                            }
+                                        }
+
+                                        }
                                         p {
                                             margin: 0px;
                                             font-weight: 400;
@@ -2196,7 +2534,7 @@ section.multistep_sec {
 
                     .next_btn {
                         button.custom_back {
-                            display: none;
+                            // display: none;
                         }
                     }
 
