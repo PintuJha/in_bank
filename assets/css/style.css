@@ -738,6 +738,9 @@ section.multistep_sec .menu_link_section .content_box .form-card .summary_detail
   line-height: 20px;
   color: #1B1B1B;
 }
+section.multistep_sec .menu_link_section .content_box .form-card .summary_details_box .top_box .heading_box p a {
+  text-decoration: none;
+}
 section.multistep_sec .menu_link_section .content_box .form-card .summary_box {
   padding: 25px;
 }
@@ -1222,6 +1225,9 @@ section.multistep_sec .menu_link_section .content_box .form-card form .cus_form 
   line-height: 26px;
   color: #1B1B1B;
 }
+section.multistep_sec .menu_link_section .content_box .form-card form .cus_form .custom_filed.custom_basic.annual-fee .form-group input::placeholder {
+  color: #D9D9D9;
+}
 section.multistep_sec .menu_link_section .content_box .form-card form .cus_form .custom_filed.custom_basic {
   width: 80%;
 }
@@ -1336,7 +1342,19 @@ section.multistep_sec .menu_link_section .content_box .form-card form .cus_form 
   position: absolute;
   left: -9999px;
 }
-section.multistep_sec .menu_link_section .content_box .form-card form .cus_form .custom_filed.custom_basic .form-group ul li [type=radio]:checked + label,
+section.multistep_sec .menu_link_section .content_box .form-card form .cus_form .custom_filed.custom_basic .form-group ul li [type=radio]:checked + label {
+  position: relative;
+  cursor: pointer;
+  text-align: left;
+  display: block;
+  width: 100%;
+  line-height: 23px;
+  height: 100%;
+  font-weight: 600;
+  font-size: 15px;
+  color: #1B1B1B;
+  padding: 12px 30px 0px 50px;
+}
 section.multistep_sec .menu_link_section .content_box .form-card form .cus_form .custom_filed.custom_basic .form-group ul li [type=radio]:not(:checked) + label {
   position: relative;
   cursor: pointer;
@@ -1350,7 +1368,17 @@ section.multistep_sec .menu_link_section .content_box .form-card form .cus_form 
   color: #1B1B1B;
   padding: 12px 30px 0px 50px;
 }
-section.multistep_sec .menu_link_section .content_box .form-card form .cus_form .custom_filed.custom_basic .form-group ul li [type=radio]:checked + label:before,
+section.multistep_sec .menu_link_section .content_box .form-card form .cus_form .custom_filed.custom_basic .form-group ul li [type=radio]:checked + label:before {
+  content: "";
+  position: absolute;
+  left: 14px;
+  top: 12px;
+  width: 24px;
+  height: 24px;
+  border: 12px solid #97262a;
+  border-radius: 100%;
+  background: #fff;
+}
 section.multistep_sec .menu_link_section .content_box .form-card form .cus_form .custom_filed.custom_basic .form-group ul li [type=radio]:not(:checked) + label:before {
   content: "";
   position: absolute;
@@ -1360,25 +1388,31 @@ section.multistep_sec .menu_link_section .content_box .form-card form .cus_form 
   height: 24px;
   border: 1px solid #BBBBBB;
   border-radius: 100%;
-  background: #fff;
+  background: #ffffff;
 }
-section.multistep_sec .menu_link_section .content_box .form-card form .cus_form .custom_filed.custom_basic .form-group ul li [type=radio]:checked + label:after,
-section.multistep_sec .menu_link_section .content_box .form-card form .cus_form .custom_filed.custom_basic .form-group ul li [type=radio]:not(:checked) + label:after {
+section.multistep_sec .menu_link_section .content_box .form-card form .cus_form .custom_filed.custom_basic .form-group ul li [type=radio]:checked + label:after {
   content: "";
   width: 16px;
   height: 16px;
-  background: #98272a;
+  background: #ffffff;
   position: absolute;
   top: 16px;
   left: 18px;
   border-radius: 100%;
   transition: all 0.2s ease;
-  border: 1px solid #98272a;
+  border: 0px solid #98272a;
 }
 section.multistep_sec .menu_link_section .content_box .form-card form .cus_form .custom_filed.custom_basic .form-group ul li [type=radio]:not(:checked) + label:after {
-  opacity: 0;
-  -webkit-transform: scale(0);
-  transform: scale(0);
+  content: "";
+  width: 16px;
+  height: 16px;
+  background: #DEDEDE;
+  position: absolute;
+  top: 16px;
+  left: 18px;
+  border-radius: 100%;
+  transition: all 0.2s ease;
+  border: 0px solid #DEDEDE;
 }
 section.multistep_sec .menu_link_section .content_box .form-card form .cus_form .custom_filed.custom_basic .form-group ul li [type=radio]:checked + label:after {
   opacity: 1;
