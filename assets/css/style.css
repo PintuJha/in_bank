@@ -205,6 +205,7 @@ section .sale_assist_sec .login_img_sec .login_icon .finance_heading .app_bankin
     padding: 14px 0px;
     font-size: 20px;
     line-height: 30px;
+    display: none;
   }
   header nav.navbar.navbar-expand-lg .navbar-collapse.collapse.show ul.navbar-nav.ml-auto {
     padding-bottom: 12px;
@@ -771,8 +772,27 @@ section.multistep_sec .menu_link_section .content_box .form-card .summary_box .r
   display: none;
 }
 section.multistep_sec .menu_link_section .content_box .form-card .summary_box .recommended_box .pagination_box {
-  text-align: right;
   margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+section.multistep_sec .menu_link_section .content_box .form-card .summary_box .recommended_box .pagination_box .popup_link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+}
+section.multistep_sec .menu_link_section .content_box .form-card .summary_box .recommended_box .pagination_box p {
+  margin: 0px;
+  margin-right: 0px;
+  font-size: 18px;
+  font-weight: 600;
+}
+section.multistep_sec .menu_link_section .content_box .form-card .summary_box .recommended_box .pagination_box p a {
+  text-decoration: none;
+  color: #0056b3;
 }
 section.multistep_sec .menu_link_section .content_box .form-card .summary_box .recommended_box .pagination_box .pagination {
   display: inline-block;
@@ -1515,6 +1535,9 @@ section.multistep_sec .menu_link_section .content_box .form-card form .cus_form 
   }
 }
 @media (max-width: 1199.98px) {
+  section.multistep_sec .menu_link_section .content_box .form-card .summary_box .recommended_box .pagination_box .popup_link {
+    width: 60%;
+  }
   section.multistep_sec .menu_link_section .content_box .form-card form.information .cus_form .custom_filed.custom_basic {
     width: 60%;
     margin: 0px auto;
@@ -1556,6 +1579,16 @@ section.multistep_sec .menu_link_section .content_box .form-card form .cus_form 
   }
 }
 @media (max-width: 767.98px) {
+  .mobile_space_bottom {
+    margin-bottom: 165px;
+  }
+  section.multistep_sec .menu_link_section .content_box .form-card .summary_box .recommended_box .process_text p {
+    text-align: center;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+    color: #231F20;
+  }
   section.multistep_sec .menu_link_section .content_box .form-card .summary_box .recommended_box .process_text {
     width: 100%;
     position: fixed;
@@ -1570,6 +1603,7 @@ section.multistep_sec .menu_link_section .content_box .form-card form .cus_form 
   section.multistep_sec .menu_link_section .content_box .form-card .summary_box .recommended_box .pagination_box {
     text-align: center;
     margin-bottom: 0px;
+    display: block;
   }
   section.multistep_sec .menu_link_section .link ul li a span br {
     display: none;
@@ -1600,6 +1634,9 @@ section.multistep_sec .menu_link_section .content_box .form-card form .cus_form 
   }
   .back_arrow p a img.back {
     margin-right: 5px;
+  }
+  .next_btn.basic_ques {
+    padding: 12px 22px 24px;
   }
   .next_btn {
     position: fixed;
@@ -1736,7 +1773,7 @@ section.multistep_sec .menu_link_section .content_box .form-card form .cus_form 
     gap: 16px;
   }
   section.multistep_sec .menu_link_section .content_box .form-card .summary_box.mobile .recommended_mobile .recommended_card .rec_content .reco_list {
-    width: 47%;
+    width: 46%;
   }
   section.multistep_sec .menu_link_section .content_box .form-card .summary_box.mobile .recommended_mobile .recommended_card .rec_content .reco_list p {
     margin: 0px;
@@ -1853,8 +1890,12 @@ section.multistep_sec .menu_link_section .content_box .form-card form .cus_form 
   section.multistep_sec .menu_link_section .content_box .form-card .summary_box.mobile .recommended_mobile .recommended_card .top_rec .radio_btn input[type=radio]:checked + label::after {
     transform: translateY(-50%) scale(0.55);
   }
+  section.multistep_sec .menu_link_section .content_box .form-card .summary_box.mobile {
+    margin-top: 0px !important;
+  }
   section.multistep_sec .menu_link_section .content_box .form-card .summary_box {
     padding: 0px;
+    margin-top: -25px;
   }
   section.multistep_sec .menu_link_section .content_box .form-card .summary_box .heading h3 {
     font-weight: 600;
@@ -2131,6 +2172,9 @@ section.multistep_sec .menu_link_section .content_box .form-card form .cus_form 
     color: #000000;
     margin-bottom: 10px;
   }
+  section.multistep_sec .menu_link_section .content_box .form-card .answer_summary .heading .question p br {
+    display: none;
+  }
   section.multistep_sec .menu_link_section .content_box .form-card .answer_summary .heading h3 {
     font-weight: 600;
     font-size: 18px;
@@ -2219,6 +2263,11 @@ section.multistep_sec .menu_link_section .content_box .form-card form .cus_form 
   }
 }
 @media (max-width: 425.98px) {
+  .resend_btn {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 14px;
+  }
   .tooltip .tooltiptext {
     width: 100%;
     min-width: 225px;

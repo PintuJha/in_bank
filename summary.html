@@ -343,6 +343,14 @@
                                                 </div>
 
                                                 <div class="pagination_box">
+                                                  
+                                                    <div class="popup_link">
+                                                        <p class="link_add">
+                                                            <a href="javascript:void(0);" data-toggle="modal" data-target="#Generate">Click here to Generate Offer Letter
+                                                                for all products</a>
+                                                        </p>
+                                                    </div>
+
                                                     <div class="pagination">
                                                         <a href="#">
                                                             <img src="assets/img/left_arrow1.svg">
@@ -504,7 +512,7 @@
                                                 <div class="recommended_mobile">
                                                     <div class="row">
                                                         <div class="col-md-12 mb-3">
-                                                            <div class="recommended_card">
+                                                            <div class="recommended_card mobile_space_bottom">
                                                                 <div class="top_rec">
                                                                     <div class="text_list">
                                                                         <div class="icon">
@@ -549,6 +557,13 @@
                                                                     <img src="assets/img/right_arrow1.svg">
                                                                 </a>
                                                               </div>
+
+
+                                                              <p class="link_add">
+                                                                <a href="javascript:void(0);" data-toggle="modal" data-target="#Generate">Click here to Generate Offer Letter
+                                                                    for all products</a>
+                                                            </p>
+                                                            
                                                         </div>
 
                                                         <button class="back_summary"
@@ -571,6 +586,56 @@
         </div>
     </section>
 
+
+
+    <div class="modal fade" id="Generate">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-body">
+                 <div class="generate_model">
+                    <h3>Generate Capability Offer Letter</h3>
+                    <div class="generate_form">
+                        <form>
+                            <div class="row">
+                                <div class="col-md-12 mb-3">
+                                    <div class="field">
+                                        <div class="form-group">
+                                            <label for="text">Customer Name</label>
+                                            <input type="text" class="form-control" placeholder="Enter Customer Name" id="text">
+                                          </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <div class="field">
+                                        <div class="form-group">
+                                            <label for="text">Form Date</label>
+                                            <input type="date" class="form-control" placeholder="Enter Customer Name" id="text">
+                                          </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <div class="field">
+                                        <div class="form-group">
+                                            <label for="text">To Date</label>
+                                            <input type="date" class="form-control" placeholder="Enter Customer Name" id="text">
+                                          </div>
+                                    </div>
+                                </div>
+    
+                                <div class="col-md-12">
+                                    <div class="field_btn">
+                                        <button class="submit">Submit</button>
+                                    </div>
+                                </div>
+    
+                            </div>
+                        </form>
+                    </div>
+                 </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <script src="assets/js/jquery.slim.min.js"></script>
     <script src="assets/js/popper.min.js"></script>

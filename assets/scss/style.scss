@@ -698,10 +698,27 @@ section.multistep_sec {
 
                     .recommended_box {
                         .pagination_box {
-                            text-align: right;
-
                             margin-bottom: 10px;
-
+                            display: flex;
+                            align-items: center;
+                            justify-content: space-between;
+                            margin-bottom: 10px;
+                            .popup_link {
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                                width: 80%;
+                            }
+                            p{
+                                margin: 0px;
+                                margin-right: 0px;
+                                font-size: 18px;
+                                font-weight: 600;
+                                a{
+                                    text-decoration: none;
+                                    color: #0056b3;
+                                }
+                            }
                             .pagination {
                                 display: inline-block;
                             }
@@ -1692,6 +1709,10 @@ section.multistep_sec {
 
 @media (max-width: 1199.98px) {
 
+    section.multistep_sec .menu_link_section .content_box .form-card .summary_box .recommended_box .pagination_box .popup_link {
+        width: 60%;
+    }
+
     section.multistep_sec .menu_link_section .content_box .form-card form.information .cus_form .custom_filed.custom_basic {
         width: 60%;
         margin: 0px auto;
@@ -1721,6 +1742,9 @@ section.multistep_sec {
 
 
 @media (max-width: 991.98px) {
+
+
+
     section.multistep_sec .menu_link_section .content_box .form-card form.information .cus_form .custom_filed.custom_basic {
         width: 70%;
     }
@@ -1780,6 +1804,19 @@ section.multistep_sec {
 @media (max-width: 767.98px) {
 
 
+
+   .mobile_space_bottom{
+    margin-bottom: 165px;
+   }
+
+   section.multistep_sec .menu_link_section .content_box .form-card .summary_box .recommended_box .process_text p {
+    text-align: center;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+    color: #231F20;
+}
+
     section.multistep_sec .menu_link_section .content_box .form-card .summary_box .recommended_box .process_text {
         width: 100%;
         position: fixed;
@@ -1794,6 +1831,7 @@ section.multistep_sec {
     section.multistep_sec .menu_link_section .content_box .form-card .summary_box .recommended_box .pagination_box {
         text-align: center;
         margin-bottom: 0px;
+        display: block;
     }
 
     section.multistep_sec .menu_link_section .link ul li a span br{
@@ -1829,14 +1867,16 @@ section.multistep_sec {
         }
     }
 
-
+    .next_btn.basic_ques {
+        padding: 12px 22px 24px;
+    }
     .next_btn {
         position: fixed;
         left: 0px;
         right: 0px;
         bottom: 0px;
         background: white;
-        padding: 12px 10px 24px;
+        padding: 12px 0px 24px;
         z-index: 99;
     }
     section.multistep_sec{
@@ -2007,7 +2047,7 @@ section.multistep_sec {
                                     flex-wrap: wrap;
                                     gap: 16px;
                                     .reco_list {
-                                        width: 47%;
+                                        width: 46%;
                                         p {
                                             margin: 0px;
                                           }
@@ -2158,8 +2198,14 @@ section.multistep_sec {
 
 
                     }
+
+                    .summary_box.mobile {
+                        margin-top: 0px !important;
+                    }
+
                     .summary_box {
                         padding: 0px;
+                        margin-top: -25px;
 
                         .heading {
                             h3 {
@@ -2513,6 +2559,9 @@ section.multistep_sec {
                                     line-height: 20px;
                                     color: #000000;
                                     margin-bottom: 10px;
+                                    br{
+                                        display: none;
+                                    }
                                 }
                             }
 
@@ -2634,6 +2683,8 @@ section.multistep_sec {
 }
 
 @media (max-width: 575.98px) {
+
+    
     div#confirm .modal-content .con_content {
         padding: 12px;
 
@@ -2660,6 +2711,14 @@ section.multistep_sec {
 }
 
 @media (max-width: 425.98px) {
+
+    .resend_btn {
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 14px;
+    }
+
+
     .tooltip {
         .tooltiptext {
 
