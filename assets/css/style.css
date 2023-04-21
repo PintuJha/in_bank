@@ -1579,6 +1579,15 @@ section.multistep_sec .menu_link_section .content_box .form-card form .cus_form 
   }
 }
 @media (max-width: 767.98px) {
+  .resend_btn {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 14px;
+  }
+  div#confirm .modal-content .con_content .resend_btn button.offer_close {
+    width: 60%;
+    margin: 0px auto;
+  }
   .mobile_space_bottom {
     margin-bottom: 165px;
   }
@@ -1741,6 +1750,9 @@ section.multistep_sec .menu_link_section .content_box .form-card form .cus_form 
   }
   section.multistep_sec .menu_link_section .link ul {
     margin-top: 20px;
+  }
+  section.multistep_sec .menu_link_section .link ul li.active.summary_details {
+    display: none;
   }
   section.multistep_sec .menu_link_section .link ul li.active {
     display: block;
@@ -2114,18 +2126,18 @@ section.multistep_sec .menu_link_section .content_box .form-card form .cus_form 
     line-height: 20px;
   }
   section.multistep_sec .menu_link_section .content_box .form-card .summary_details_box .customer_details .form-group textarea {
-    font-weight: 500;
+    font-weight: 600;
     font-size: 15px;
     line-height: 19px;
   }
   section.multistep_sec .menu_link_section .content_box .form-card .summary_details_box .customer_details .form-group input {
-    font-weight: 500;
+    font-weight: 600;
     font-size: 15px;
     line-height: 19px;
   }
   section.multistep_sec .menu_link_section .content_box .form-card .summary_details_box .customer_details .customer_heading h3 {
     font-weight: 600;
-    font-size: 18px;
+    font-size: 15px;
     line-height: 20px;
     color: #000000;
     margin: 10px 0px 0px;
