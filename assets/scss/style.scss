@@ -77,7 +77,7 @@ div#confirm {
                     padding: 12px 25px;
                     margin-right: 10px;
                 }
-
+                
                 button.latter {
                     border: 0px;
                     background: #98272A;
@@ -327,35 +327,33 @@ body {
 
 section.multistep_sec {
     padding: 15px 25px;
-
-    .disclaimer_sec {
-        display: flex;
-        align-items: center;
-        justify-content: space-evenly;
-        width: 80%;
-        margin: 25px auto 0px;
-
-        p {
-            margin: 0px;
-            font-size: 16px;
-            line-height: 24px;
-            color: #FF5A43;
-            font-weight: 600;
-            width: 60%;
+  
+        .disclaimer_sec {
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            width: 80%;
+            margin: 25px auto 0px;
+            p {
+                margin: 0px;
+                font-size: 16px;
+                line-height: 24px;
+                color: #FF5A43;
+                font-weight: 600;
+                width: 60%;
+            }
+            button.custom_back {
+                background: #FFFFFF;
+                border: 1px solid #97262A;
+                border-radius: 12px;
+                font-weight: 600;
+                font-size: 16px;
+                line-height: 20px;
+                color: #231F20;
+                padding: 12px 34px;
+            }
         }
-
-        button.custom_back {
-            background: #FFFFFF;
-            border: 1px solid #97262A;
-            border-radius: 12px;
-            font-weight: 600;
-            font-size: 16px;
-            line-height: 20px;
-            color: #231F20;
-            padding: 12px 34px;
-        }
-    }
-
+   
 
 
     .back {
@@ -660,7 +658,6 @@ section.multistep_sec {
                                 font-size: 14px;
                                 line-height: 20px;
                                 color: #1B1B1B;
-
                                 a {
                                     text-decoration: underline;
                                 }
@@ -668,11 +665,9 @@ section.multistep_sec {
                         }
                     }
                 }
-
-                .summary_box.mobile {
+                .summary_box.mobile{
                     display: none;
                 }
-
                 .summary_box {
                     // background: #F9F9F9;
                     padding: 25px;
@@ -708,26 +703,22 @@ section.multistep_sec {
                             align-items: center;
                             justify-content: space-between;
                             margin-bottom: 10px;
-
                             .popup_link {
                                 display: flex;
                                 align-items: center;
                                 justify-content: center;
                                 width: 80%;
                             }
-
-                            p {
+                            p{
                                 margin: 0px;
                                 margin-right: 0px;
                                 font-size: 18px;
                                 font-weight: 600;
-
-                                a {
+                                a{
                                     text-decoration: none;
                                     color: #0056b3;
                                 }
                             }
-
                             .pagination {
                                 display: inline-block;
                             }
@@ -1003,12 +994,10 @@ section.multistep_sec {
                         font-weight: 600;
                         font-size: 16px;
                         line-height: 19px;
-
                         img.back {
                             margin-left: 0px;
                             margin-right: 5px;
                         }
-
                         img {
                             margin-left: 5px;
                             width: 22px;
@@ -1017,7 +1006,7 @@ section.multistep_sec {
                 }
 
                 .next_btn {
-
+                   
                     button.custom_back {
                         color: #231F20;
                         background: #FFFFFF;
@@ -1055,7 +1044,6 @@ section.multistep_sec {
                     p.skip {
                         margin: 0px;
                         margin-top: 22px;
-
                         a {
                             text-decoration: underline;
                             font-weight: 600;
@@ -1320,8 +1308,7 @@ section.multistep_sec {
                                     font-size: 20px;
                                     line-height: 26px;
                                     color: #1B1B1B;
-
-                                    &::placeholder {
+                                    &::placeholder{
                                         color: #D9D9D9;
                                     }
                                 }
@@ -1459,7 +1446,7 @@ section.multistep_sec {
                                             left: -9999px;
                                         }
 
-                                        [type="radio"]:checked+label {
+                                        [type="radio"]:checked+label{
                                             position: relative;
                                             cursor: pointer;
                                             text-align: left;
@@ -1472,7 +1459,7 @@ section.multistep_sec {
                                             color: #1B1B1B;
                                             padding: 12px 30px 0px 50px;
                                         }
-
+                                       
                                         [type="radio"]:not(:checked)+label {
                                             position: relative;
                                             cursor: pointer;
@@ -1487,7 +1474,7 @@ section.multistep_sec {
                                             padding: 12px 30px 0px 50px;
                                         }
 
-                                        [type="radio"]:checked+label:before {
+                                        [type="radio"]:checked+label:before{
                                             content: "";
                                             position: absolute;
                                             left: 14px;
@@ -1496,7 +1483,7 @@ section.multistep_sec {
                                             height: 24px;
                                             border: 12px solid #97262a;
                                             border-radius: 100%;
-                                            background: #fff;
+                                            background: #fff; 
                                         }
 
                                         // [type="radio"]:checked+label:before,
@@ -1510,10 +1497,10 @@ section.multistep_sec {
                                             border: 1px solid #BBBBBB;
                                             border-radius: 100%;
                                             background: #ffffff;
-
+                                           
                                         }
 
-                                        [type="radio"]:checked+label:after {
+                                        [type="radio"]:checked+label:after{
                                             content: "";
                                             width: 16px;
                                             height: 16px;
@@ -1827,17 +1814,17 @@ section.multistep_sec {
     }
 
 
-    .mobile_space_bottom {
-        margin-bottom: 165px;
-    }
+   .mobile_space_bottom{
+    margin-bottom: 165px;
+   }
 
-    section.multistep_sec .menu_link_section .content_box .form-card .summary_box .recommended_box .process_text p {
-        text-align: center;
-        font-weight: 600;
-        font-size: 14px;
-        line-height: 20px;
-        color: #231F20;
-    }
+   section.multistep_sec .menu_link_section .content_box .form-card .summary_box .recommended_box .process_text p {
+    text-align: center;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+    color: #231F20;
+}
 
     section.multistep_sec .menu_link_section .content_box .form-card .summary_box .recommended_box .process_text {
         width: 100%;
@@ -1850,45 +1837,38 @@ section.multistep_sec {
         margin: 0px auto;
         z-index: 99;
     }
-
     section.multistep_sec .menu_link_section .content_box .form-card .summary_box .recommended_box .pagination_box {
         text-align: center;
         margin-bottom: 0px;
         display: block;
     }
 
-    section.multistep_sec .menu_link_section .link ul li a span br {
+    section.multistep_sec .menu_link_section .link ul li a span br{
         display: none;
     }
-
     div#Generate .modal-content .generate_model .generate_form {
         width: 100%;
         margin: 32px auto 0px;
     }
-
     section.multistep_sec .menu_link_section .content_box .form-card .next_btn p.link_add a {
         font-size: 14px;
     }
 
 
-    .web_view_search {
-        display: none;
-    }
-
+.web_view_search{
+    display: none;
+}
     .back_arrow {
         display: block;
-
-        p {
+        p{
             margin: 0px;
             margin-top: 12px;
-
             a {
                 color: black;
                 font-weight: 600;
                 font-size: 16px;
                 line-height: 19px;
                 text-decoration: none;
-
                 img.back {
                     margin-right: 5px;
                 }
@@ -1899,7 +1879,6 @@ section.multistep_sec {
     .next_btn.basic_ques {
         padding: 12px 22px 24px;
     }
-
     .next_btn {
         position: fixed;
         left: 0px;
@@ -1909,13 +1888,11 @@ section.multistep_sec {
         padding: 12px 0px 24px;
         z-index: 99;
     }
-
-    section.multistep_sec {
+    section.multistep_sec{
         .disclaimer_sec {
             display: block;
             width: 100%;
             margin: 20px auto 0px;
-
             p {
                 margin: 0px;
                 font-size: 15px;
@@ -1925,7 +1902,6 @@ section.multistep_sec {
                 width: 100%;
                 margin-bottom: 16px;
             }
-
             .skip {
                 text-align: right;
             }
@@ -2063,18 +2039,16 @@ section.multistep_sec {
                 padding-top: 20px;
 
                 .form-card {
-                    .summary_box.mobile {
+                    .summary_box.mobile{
                         display: block;
                         padding: 0px;
-
                         h4 {
                             font-weight: 600;
                             font-size: 16px;
                             line-height: 20px;
                             color: #000000;
-                        }
-
-                        .recommended_mobile {
+                          }
+                          .recommended_mobile{
                             .recommended_card {
                                 background: #FFFFFF;
                                 box-shadow: 0px 0px 6px #DEDEDE;
@@ -2086,23 +2060,21 @@ section.multistep_sec {
                                     display: flex;
                                     flex-wrap: wrap;
                                     gap: 16px;
-
                                     .reco_list {
                                         width: 46%;
-
                                         p {
                                             margin: 0px;
-                                        }
+                                          }
 
-                                        .bold {
+                                          .bold {
                                             font-weight: 600;
                                             font-size: 14px;
                                             margin-top: 3px !important;
-                                        }
-                                    }
-                                }
+                                          }
+                                      }
+                                  }
 
-
+                            
                                 .top_rec {
                                     display: flex;
                                     align-items: flex-start;
@@ -2236,7 +2208,7 @@ section.multistep_sec {
 
                                 }
                             }
-                        }
+                          }
 
 
                     }
@@ -2288,73 +2260,72 @@ section.multistep_sec {
                                     .rec_content {
 
                                         .radio_btn {
-                                            .radio-buttons {
+                                            .radio-buttons{
                                                 display: flex;
-                                                align-items: center;
-                                                justify-content: center;
-                                                gap: 48px;
-                                                margin-top: 12px;
-
-                                                .form-group {
-                                                    margin-bottom: 4px;
-                                                }
-
-                                                input[type="radio"] {
-                                                    display: none;
-                                                }
-
-                                                label {
-                                                    cursor: pointer;
-                                                    position: relative;
-                                                    cursor: pointer;
-                                                    position: relative;
-                                                    margin: 0px;
-                                                    font-weight: 600;
-                                                    font-size: 14px;
-                                                    line-height: 16px;
-                                                    margin: 0px;
-
-                                                }
-
-                                                label::before {
-                                                    content: "";
-                                                    position: absolute;
-                                                    width: 22px;
-                                                    height: 22px;
-                                                    background-color: #e3dddd1a;
-                                                    border-radius: 50%;
-                                                    border: 1px solid #D9D9D9;
-                                                    top: 50%;
-                                                    left: -30px;
-                                                    transform: translateY(-50%);
-                                                    transition: border-color 400ms ease;
-                                                }
-
-                                                label::after {
-                                                    content: "";
-                                                    position: absolute;
-                                                    width: 22px;
-                                                    height: 22px;
-                                                    background-color: #98272A;
-                                                    border: 2px solid #98272A;
-                                                    border-radius: 50%;
-                                                    top: 50%;
-                                                    left: -30px;
-                                                    transform: translateY(-50%) scale(0);
-                                                    transition: transform 400ms ease;
-                                                }
-
-                                                input[type="radio"]:checked+label::before {
-                                                    border-color: #98272A;
-                                                }
-
-                                                input[type="radio"]:checked+label::after {
-                                                    transform: translateY(-50%) scale(0.55);
-                                                }
+    align-items: center;
+    justify-content: center;
+    gap: 48px;
+    margin-top: 12px;
+                                           
+                                            .form-group {
+                                                margin-bottom: 4px;
                                             }
 
+                                            input[type="radio"] {
+                                                display: none;
+                                            }
+
+                                            label {
+                                                cursor: pointer;
+                                                position: relative;
+                                                cursor: pointer;
+                                                position: relative;
+                                                margin: 0px;
+                                                font-weight: 600;
+                                                font-size: 14px;
+                                                line-height: 16px;
+                                                margin: 0px;
+
+                                            }
+
+                                            label::before {
+                                                content: "";
+                                                position: absolute;
+                                                width: 22px;
+                                                height: 22px;
+                                                background-color: #e3dddd1a;
+                                                border-radius: 50%;
+                                                border: 1px solid #D9D9D9;
+                                                top: 50%;
+                                                left: -30px;
+                                                transform: translateY(-50%);
+                                                transition: border-color 400ms ease;
+                                            }
+
+                                            label::after {
+                                                content: "";
+                                                position: absolute;
+                                                width: 22px;
+                                                height: 22px;
+                                                background-color: #98272A;
+                                                border: 2px solid #98272A;
+                                                border-radius: 50%;
+                                                top: 50%;
+                                                left: -30px;
+                                                transform: translateY(-50%) scale(0);
+                                                transition: transform 400ms ease;
+                                            }
+
+                                            input[type="radio"]:checked+label::before {
+                                                border-color: #98272A;
+                                            }
+
+                                            input[type="radio"]:checked+label::after {
+                                                transform: translateY(-50%) scale(0.55);
+                                            }
                                         }
 
+                                        }
                                         p {
                                             margin: 0px;
                                             font-weight: 400;
@@ -2530,9 +2501,9 @@ section.multistep_sec {
 
                                 input {
 
-                                    font-weight: 600;
-                                    font-size: 15px;
-                                    line-height: 19px;
+                                       font-weight: 600;
+    font-size: 15px;
+    line-height: 19px;
                                 }
                             }
 
@@ -2602,8 +2573,7 @@ section.multistep_sec {
                                     line-height: 20px;
                                     color: #000000;
                                     margin-bottom: 10px;
-
-                                    br {
+                                    br{
                                         display: none;
                                     }
                                 }
@@ -2728,7 +2698,7 @@ section.multistep_sec {
 
 @media (max-width: 575.98px) {
 
-
+    
     div#confirm .modal-content .con_content {
         padding: 12px;
 
